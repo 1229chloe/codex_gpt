@@ -1,4 +1,5 @@
 import streamlit as st
+import step7_hardcoded
 
 # ===== 초기 상태 정의 =====
 if "step" not in st.session_state:
@@ -62,6 +63,7 @@ if st.session_state.step == 2:
 (근거 : 「의약품의 품목허가·신고·심사 규정」[별표 19])""")
 
 # ===== Step3 함수 및 화면 =====
+# Step 3 → Step 4 이동 함수
 def go_to_step4():
     if st.session_state.step3_answer == "예":
         st.session_state.step = 4
