@@ -705,6 +705,10 @@ if st.session_state.step == 7:
     st.markdown("## 제조방법 변경에 따른 필요서류 및 보고유형")
     st.markdown(st.session_state.step6_items[current_key]["title"])
     hits = []
+    
+    orig_markdown = st.markdown
+    st.markdown = lambda *args, **kwargs: None
+    
     if current_key == "s1_1":
         if (step6_selections.get("s1_1_req_1") == "충족"):
             st.markdown(r"""보고유형은 다음과 같습니다.
@@ -2382,7 +2386,17 @@ if st.session_state.step == 7:
     3. 신청 서류의 변경과 관련된 CTD 자료."""))
         
     
-    if not hits:
+    st.markdown = orig_markdown
+
+    if hits:
+        st.markdown("<ul>", unsafe_allow_html=True)
+        for _, output_1_text, output_2_text in hits:
+            st.markdown(
+                f"<li>{output_1_text}<br/>{output_2_text}</li>",
+                unsafe_allow_html=True,
+            )
+        st.markdown("</ul>", unsafe_allow_html=True)
+    else:
         st.warning(
             "해당 변경사항에 대한 충족조건을 고려하였을 때,\n"
             "「의약품 허가 후 제조방법 변경관리 가이드라인」에서 제시하고 있는\n"
