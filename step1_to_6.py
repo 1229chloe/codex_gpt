@@ -703,3 +703,8 @@ if st.session_state.step == 6:
                 st.button("결과 확인하기", on_click=go_to_step7)
             else:
                 st.button("다음항목 선택하기", on_click=go_to_next_step6_page)
+
+import step7_hardcoded
+
+if st.session_state.step == 7:
+    step7_hardcoded.render_step7(step6_items)
