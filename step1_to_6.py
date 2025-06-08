@@ -100,11 +100,6 @@ step4_items = {
     "ds": "디자인스페이스(Design Space)"
 }
 
-# Step 3 → Step 4 이동 함수
-def go_to_step4():
-    if st.session_state.step3_answer == "예":
-        st.session_state.step = 4
-
 # Step 4 → Step 5 이동 함수
 def go_to_step5():
     st.session_state.step5_targets = [
