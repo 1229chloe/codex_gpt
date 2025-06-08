@@ -4,6 +4,8 @@
 > This README describes how to run the fully integrated **Steps 1–7** Streamlit app.
 > All identifiers, column names, and Korean UI strings **must remain exactly as written**  
 > to ensure a 1-to-1 mapping with `step7_data.xlsx`.
+> The worksheet data is already baked into `step7_hardcoded.py` and the Excel
+> file is **not** loaded at runtime.
 
 ---
 
@@ -11,7 +13,8 @@
 
     / (project root)
     ├─ step1_to_7_full.py   # Steps 1 – 7 combined in one script
-    ├─ step7_data.xlsx      # worksheet containing evaluation rules & texts
+    ├─ step7_hardcoded.py   # Step 7 rules embedded as Python code
+    ├─ step7_data.xlsx      # reference workbook (not read at runtime)
     └─ README.md            # (this file)
 
 ---
@@ -20,7 +23,7 @@
 
 1. Run `streamlit run step1_to_7_full.py`.
 2. Steps 1–7 are all contained in this single script. After Step 6 finishes, `st.session_state.step` becomes `7`.
-3. The Step 7 logic runs automatically with no separate import.
+3. Step 7 executes using the rules defined in `step7_hardcoded.py` with no Excel reads.
 4. Final-page button **"신청양식 확인하기"** sets `st.session_state.step = 8`, handing control to Step 8
 
 ---
@@ -65,9 +68,9 @@ Do not alter its structure.
 
 ## 7. Quick Setup Checklist
 
-- [ ] Ensure `step7_data.xlsx` is present in the same folder
 - [ ] Run `streamlit run step1_to_7_full.py`
 - [ ] Step 7 executes automatically whenever `st.session_state.step == 7`
+- [ ] `step7_data.xlsx` is only for reference and is not read by the code
 
 ---
 
