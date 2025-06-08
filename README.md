@@ -5,6 +5,7 @@
 > All identifiers, column names, and Korean UI strings **must remain exactly as written**  
 > to ensure a 1-to-1 mapping with the archived `step7_data.xlsx` workbook.
 > All worksheet data for **Steps&nbsp;1–7** is hard-coded inside `step1_to_7.py`.
+> The earlier dynamic version (`step7_dynamic.py` with `step7_data.xlsx`) has been deprecated and lives only in the `legacy/` folder.
 > No external files are read at runtime.
 
 ---
@@ -13,7 +14,7 @@
 
     / (project root)
     ├─ step1_to_7.py        # Sole entry point for Steps 1–7
-    ├─ legacy/              # archived scripts and data
+    ├─ legacy/              # deprecated dynamic script and Excel data
     ├─ STEP7_WORK_SPEC.md   # step7 specification
     ├─ requirements.txt     # dependencies
     └─ README.md            # (this file)
@@ -68,9 +69,9 @@ Do not alter its structure.
 
 ## 7. Quick Setup Checklist
 
-- [ ] Run `streamlit run step1_to_7.py`
-- [ ] Step 7 executes automatically whenever `st.session_state.step == 7`
-- [ ] All data is embedded in the script; no external files are read
+1. [ ] Run `streamlit run step1_to_7.py`
+2. [ ] Step 7 executes automatically whenever `st.session_state.step == 7`
+3. [ ] All data is embedded in the script; no external files are read
 
 ---
 
