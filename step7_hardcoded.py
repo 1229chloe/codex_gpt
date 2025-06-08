@@ -8,15 +8,13 @@ if st.session_state.step != 7:
     st.stop()
 
 step6_selections = st.session_state.step6_selections
-step6_items = st.session_state.step6_items
 targets = st.session_state.step6_targets
 total_pages = len(targets)
 current_key = targets[st.session_state.step7_page]
-st.session_state.step7_결과[current_key] = [] 
+st.session_state.step7_results[current_key] = []
 
 st.markdown("## 제조방법 변경에 따른 필요서류 및 보고유형")
-st.markdown(step6_items[current_key]["title"])
-
+st.markdown(st.session_state.step6_items[current_key]["title"])
 hits = []
 if current_key == "s1_1":
     if (step6_selections.get("s1_1_req_1") == "충족"):
