@@ -704,7 +704,7 @@ if st.session_state.step == 6:
             else:
                 st.button("다음항목 선택하기", on_click=go_to_next_step6_page)
 
-import step7_hardcoded
+import step7_dynamic
 
 if st.session_state.step == 7:
-    step7_hardcoded.render_step7(step6_items)
+    step7_dynamic.render_step7(step6_items)
