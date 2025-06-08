@@ -22,7 +22,7 @@
 
 1. User finishes Step 6 → `st.session_state.step = 7`  
 2. `step1_to_6.py` imports `step7_hardcoded.py` **after** its own logic  
-3. Step 7 reads once from `step7_data.xlsx` and renders dynamic pages  
+3. Step 7 executes automatically when `st.session_state.step` equals `7`; all logic is embedded directly inside `step7_hardcoded.py` with no runtime Excel reads
 4. Final-page button **"신청양식 확인하기"** sets `st.session_state.step = 8`, handing control to Step 8
 
 ---
@@ -48,9 +48,7 @@
 | Row output | every row where `output_condition_all_met` evaluates **True** → show `output_1_text` + `output_2_text` (HTML) |
 | Warning   | shown **only** if no rows hit → `"해당 변경사항에 대한 … 확인됩니다"` |
 | Buttons   | `"이전단계로"` (−1) · `"다음단계로"` (+1) · `"신청양식 확인하기"` (+1, final page only) |
-
----
-
+@@ -54,25 +54,36 @@
 ## 5. Data-Integrity Rules
 
 * **Do NOT** invent new column names, session keys, or button labels  
@@ -76,3 +74,14 @@ Do not alter its structure.
 - [ ] Commit & push → Codex auto-runs Step 7 whenever `st.session_state.step == 7`
 
 ---
+
+## 8. Running the App Locally
+
+Install the dependencies and start Streamlit:
+
+```bash
+pip install -r requirements.txt
+streamlit run step1_to_6.py
+```
+
+Step 7 appears automatically whenever `st.session_state.step` becomes `7`.
