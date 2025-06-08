@@ -1,8 +1,7 @@
 # Step 7 Hard-Coded Logic – Integration Guide
 
 > **Scope**  
-> This README describes how to integrate the hard-coded **Step 7** module with the existing  
-> `step1_to_6.py` Streamlit app in your Codex-linked GitHub repository.  
+> This README describes how to run the fully integrated **Steps 1–7** Streamlit app.
 > All identifiers, column names, and Korean UI strings **must remain exactly as written**  
 > to ensure a 1-to-1 mapping with `step7_data.xlsx`.
 
@@ -11,8 +10,7 @@
 ## 1. Repository Structure
 
     / (project root)
-    ├─ step1_to_6.py        # completed Steps 1 – 6
-    ├─ step7_hardcoded.py   # ★ add this file
+    ├─ step1_to_7_full.py   # Steps 1 – 7 combined in one script
     ├─ step7_data.xlsx      # worksheet containing evaluation rules & texts
     └─ README.md            # (this file)
 
@@ -20,9 +18,9 @@
 
 ## 2. Activation Sequence
 
-1. User finishes Step 6 → `st.session_state.step = 7`  
-2. `step1_to_6.py` imports `step7_hardcoded.py` **after** its own logic  
-3. Step 7 executes automatically when `st.session_state.step` equals `7`; all logic is embedded directly inside `step7_hardcoded.py` with no runtime Excel reads
+1. Run `streamlit run step1_to_7_full.py`.
+2. Steps 1–7 are all contained in this single script. After Step 6 finishes, `st.session_state.step` becomes `7`.
+3. The Step 7 logic runs automatically with no separate import.
 4. Final-page button **"신청양식 확인하기"** sets `st.session_state.step = 8`, handing control to Step 8
 
 ---
@@ -67,11 +65,9 @@ Do not alter its structure.
 
 ## 7. Quick Setup Checklist
 
-- [ ] Copy `step7_hardcoded.py` to the repo root (same level as `step1_to_6.py`)
 - [ ] Ensure `step7_data.xlsx` is present in the same folder
-- [ ] In `step1_to_6.py` add the line  
-      `import step7_hardcoded` **after** the Step 6 logic
-- [ ] Commit & push → Codex auto-runs Step 7 whenever `st.session_state.step == 7`
+- [ ] Run `streamlit run step1_to_7_full.py`
+- [ ] Step 7 executes automatically whenever `st.session_state.step == 7`
 
 ---
 
@@ -81,7 +77,7 @@ Install the dependencies and start Streamlit:
 
 ```bash
 pip install -r requirements.txt
-streamlit run step1_to_6.py
+streamlit run step1_to_7_full.py
 ```
 
 Step 7 appears automatically whenever `st.session_state.step` becomes `7`.
