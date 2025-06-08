@@ -604,6 +604,12 @@ if "step6_selections" not in st.session_state:
 if "step6_page" not in st.session_state:
     st.session_state.step6_page = 0
 
+if "step7_page" not in st.session_state:
+    st.session_state.step7_page = 0
+
+if "step7_results" not in st.session_state:
+    st.session_state.step7_results = {}
+    
 def go_to_prev_step6_page():
     if st.session_state.step6_page > 0:
         st.session_state.step6_page -= 1
