@@ -621,6 +621,8 @@ def go_back_to_step5():
     st.session_state.step = 5
 
 def go_to_step7():
+    """Reset Step 7 state and navigate to the results page."""
+    # Clear any previous results so Step 7 always starts fresh
     st.session_state.step7_page = 0
     st.session_state.step7_results = {}
     st.session_state.step = 7
