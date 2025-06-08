@@ -3,7 +3,7 @@
 > **Scope**  
 > This README describes how to run the fully integrated **Steps 1–7** Streamlit app.
 > All identifiers, column names, and Korean UI strings **must remain exactly as written**  
-> to ensure a 1-to-1 mapping with `step7_data.xlsx`.
+> to ensure a 1-to-1 mapping with the archived `step7_data.xlsx` workbook.
 > All worksheet data for **Steps&nbsp;1–7** is hard-coded inside `step1_to_7.py`.
 > No external files are read at runtime.
 
@@ -12,11 +12,11 @@
 ## 1. Repository Structure
 
     / (project root)
-    ├─ step1_to_7.py        # Steps 1 – 7 unified, fully hard-coded
-    ├─ step7_hardcoded.py   # legacy Step 7 module (embedded)
-    ├─ step7_data.xlsx      # reference workbook (not read at runtime)
+    ├─ step1_to_7.py        # Sole entry point for Steps 1–7
+    ├─ legacy/              # archived scripts and data
+    ├─ STEP7_WORK_SPEC.md   # step7 specification
+    ├─ requirements.txt     # dependencies
     └─ README.md            # (this file)
-
 ---
 
 ## 2. Activation Sequence
@@ -49,7 +49,7 @@
 | Row output | every row where `output_condition_all_met` evaluates **True** → show `output_1_text` + `output_2_text` (HTML) |
 | Warning   | shown **only** if no rows hit → `"해당 변경사항에 대한 … 확인됩니다"` |
 | Buttons   | `"이전단계로"` (−1) · `"다음단계로"` (+1) · `"신청양식 확인하기"` (+1, final page only) |
-@@ -54,25 +54,36 @@
+
 ## 5. Data-Integrity Rules
 
 * **Do NOT** invent new column names, session keys, or button labels  
@@ -66,12 +66,11 @@ Do not alter its structure.
 
 ---
 
--## 7. Quick Setup Checklist
+## 7. Quick Setup Checklist
 
 - [ ] Run `streamlit run step1_to_7.py`
 - [ ] Step 7 executes automatically whenever `st.session_state.step == 7`
-- [ ] `step7_data.xlsx` is only for reference and is not read by the code
-- [ ] Steps 1–7 are fully hard-coded and require no external data at runtime
+- [ ] All data is embedded in the script; no external files are read
 
 ---
 
