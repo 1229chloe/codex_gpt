@@ -21,7 +21,7 @@ if current_key == "s1_1":
         st.markdown(r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. (S.1.1) 공정서 또는 국제 의약품 일반명 리스트(INN, The International Nonproprietary Name) 등 근거서류.
@@ -29,7 +29,7 @@ AR, 연차보고
         hits.append(("AR", r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. (S.1.1) 공정서 또는 국제 의약품 일반명 리스트(INN, The International Nonproprietary Name) 등 근거서류.
 2. 개정된 제품정보"""))
@@ -39,7 +39,7 @@ if current_key == "s2_2":
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 IR, 시판전보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. (해당되는 경우) 해당 품목을 제조하는 제조소에 ‘의약품 등의 안전에 관한 규칙’ 제48조의2에 따른 제조 및 품질관리기준 적합판정서, 해외 제조원인 경우 제4조제1항제4호에 따른 유효기간 내의 제조증명서.
@@ -49,17 +49,17 @@ IR, 시판전보고
         hits.append(("IR", r"""보고유형은 다음과 같습니다.
 
 IR, 시판전보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. (해당되는 경우) 해당 품목을 제조하는 제조소에 ‘의약품 등의 안전에 관한 규칙’ 제48조의2에 따른 제조 및 품질관리기준 적합판정서, 해외 제조원인 경우 제4조제1항제4호에 따른 유효기간 내의 제조증명서.
 2. (S.2.1) 제조소명, 주소, 책임부과범위 및 해당하는 경우 수탁업소에 관한 자료.
 4. 변경 전·후 제조소의 원료의약품, 중간체 또는 원료의약품 출발 물질 (해당되는 경우)제조 공정에 관한 자료.
 10. 변경 전·후 출발 물질 또는 중간체의 최소 1배치에 대한 시험 성적서(해당하는 경우), 출발물질 또는 중간체 변경 전·후 최종 원료의약품 2배치에 대한 배치분석 자료."""))
-    elif (step6_selections.get("s2_2_sub_2a") == "변경 있음") and (step6_selections.get("s2_2_req_1") == "미충족") and (step6_selections.get("s2_2_req_2") == "미충족") and (step6_selections.get("s2_2_req_3") == "미충족") and (step6_selections.get("s2_2_req_4") == "미충족") and (step6_selections.get("s2_2_req_5") == "미충족") and (step6_selections.get("s2_2_req_6") == "미충족") and (step6_selections.get("s2_2_req_7") == "미충족") and (step6_selections.get("s2_2_req_8") == "미충족") and (step6_selections.get("s2_2_req_9") == "미충족") and (step6_selections.get("s2_2_req_10") == "미충족"):
+    if (step6_selections.get("s2_2_sub_2a") == "변경 있음") and (step6_selections.get("s2_2_req_1") == "미충족") and (step6_selections.get("s2_2_req_2") == "미충족") and (step6_selections.get("s2_2_req_3") == "미충족") and (step6_selections.get("s2_2_req_4") == "미충족") and (step6_selections.get("s2_2_req_5") == "미충족") and (step6_selections.get("s2_2_req_6") == "미충족") and (step6_selections.get("s2_2_req_7") == "미충족") and (step6_selections.get("s2_2_req_8") == "미충족") and (step6_selections.get("s2_2_req_9") == "미충족") and (step6_selections.get("s2_2_req_10") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. (해당되는 경우) 해당 품목을 제조하는 제조소에 ‘의약품 등의 안전에 관한 규칙’ 제48조의2에 따른 제조 및 품질관리기준 적합판정서, 해외 제조원인 경우 제4조제1항제4호에 따른 유효기간 내의 제조증명서.
@@ -72,7 +72,7 @@ Cmaj, 변경허가(신고)
         hits.append(("Cmaj", r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. (해당되는 경우) 해당 품목을 제조하는 제조소에 ‘의약품 등의 안전에 관한 규칙’ 제48조의2에 따른 제조 및 품질관리기준 적합판정서, 해외 제조원인 경우 제4조제1항제4호에 따른 유효기간 내의 제조증명서.
 2. (S.2.1) 제조소명, 주소, 책임부과범위 및 해당하는 경우 수탁업소에 관한 자료.
@@ -81,11 +81,11 @@ Cmaj, 변경허가(신고)
 7. (S.4.1) 원료의약품 기준 및 시험방법에 관한 자료.
 10. 변경 전·후 출발 물질 또는 중간체의 최소 1배치에 대한 시험 성적서(해당하는 경우), 출발물질 또는 중간체 변경 전·후 최종 원료의약품 2배치에 대한 배치분석 자료.
 11. (S.7.2) 변경 후 원료의약품의 안정성 시험 필요성 고찰 및 필요한 경우 안정성 시험 이행 계획서."""))
-    elif (step6_selections.get("s2_2_sub_2b") == "변경 있음") and (step6_selections.get("s2_2_req_3") == "충족") and (step6_selections.get("s2_2_req_5") == "충족") and (step6_selections.get("s2_2_req_1") == "미충족") and (step6_selections.get("s2_2_req_2") == "미충족") and (step6_selections.get("s2_2_req_4") == "미충족") and (step6_selections.get("s2_2_req_6") == "미충족") and (step6_selections.get("s2_2_req_7") == "미충족") and (step6_selections.get("s2_2_req_8") == "미충족") and (step6_selections.get("s2_2_req_9") == "미충족") and (step6_selections.get("s2_2_req_10") == "미충족"):
+    if (step6_selections.get("s2_2_sub_2b") == "변경 있음") and (step6_selections.get("s2_2_req_3") == "충족") and (step6_selections.get("s2_2_req_5") == "충족") and (step6_selections.get("s2_2_req_1") == "미충족") and (step6_selections.get("s2_2_req_2") == "미충족") and (step6_selections.get("s2_2_req_4") == "미충족") and (step6_selections.get("s2_2_req_6") == "미충족") and (step6_selections.get("s2_2_req_7") == "미충족") and (step6_selections.get("s2_2_req_8") == "미충족") and (step6_selections.get("s2_2_req_9") == "미충족") and (step6_selections.get("s2_2_req_10") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 IR, 시판전보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. (해당되는 경우) 해당 품목을 제조하는 제조소에 ‘의약품 등의 안전에 관한 규칙’ 제48조의2에 따른 제조 및 품질관리기준 적합판정서, 해외 제조원인 경우 제4조제1항제4호에 따른 유효기간 내의 제조증명서.
@@ -96,18 +96,18 @@ IR, 시판전보고
         hits.append(("IR", r"""보고유형은 다음과 같습니다.
 
 IR, 시판전보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. (해당되는 경우) 해당 품목을 제조하는 제조소에 ‘의약품 등의 안전에 관한 규칙’ 제48조의2에 따른 제조 및 품질관리기준 적합판정서, 해외 제조원인 경우 제4조제1항제4호에 따른 유효기간 내의 제조증명서.
 2. (S.2.1) 제조소명, 주소, 책임부과범위 및 해당하는 경우 수탁업소에 관한 자료.
 4. 변경 전·후 제조소의 원료의약품, 중간체 또는 원료의약품 출발 물질 (해당되는 경우)제조 공정에 관한 자료.
 8. (S.2) 원료의약품 및 핵심(최종) 중간체(해당되는 경우) 합성 경로, 사용 원료, 품질 관리 절차 및 규격 변경이 없다는 확인서(statement).
 10. 변경 전·후 출발 물질 또는 중간체의 최소 1배치에 대한 시험 성적서(해당하는 경우), 출발물질 또는 중간체 변경 전·후 최종 원료의약품 2배치에 대한 배치분석 자료."""))
-    elif (step6_selections.get("s2_2_sub_2b") == "변경 있음") and (step6_selections.get("s2_2_req_1") == "미충족") and (step6_selections.get("s2_2_req_2") == "미충족") and (step6_selections.get("s2_2_req_3") == "미충족") and (step6_selections.get("s2_2_req_4") == "미충족") and (step6_selections.get("s2_2_req_5") == "미충족") and (step6_selections.get("s2_2_req_6") == "미충족") and (step6_selections.get("s2_2_req_7") == "미충족") and (step6_selections.get("s2_2_req_8") == "미충족") and (step6_selections.get("s2_2_req_9") == "미충족") and (step6_selections.get("s2_2_req_10") == "미충족"):
+    if (step6_selections.get("s2_2_sub_2b") == "변경 있음") and (step6_selections.get("s2_2_req_1") == "미충족") and (step6_selections.get("s2_2_req_2") == "미충족") and (step6_selections.get("s2_2_req_3") == "미충족") and (step6_selections.get("s2_2_req_4") == "미충족") and (step6_selections.get("s2_2_req_5") == "미충족") and (step6_selections.get("s2_2_req_6") == "미충족") and (step6_selections.get("s2_2_req_7") == "미충족") and (step6_selections.get("s2_2_req_8") == "미충족") and (step6_selections.get("s2_2_req_9") == "미충족") and (step6_selections.get("s2_2_req_10") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. (해당되는 경우) 해당 품목을 제조하는 제조소에 ‘의약품 등의 안전에 관한 규칙’ 제48조의2에 따른 제조 및 품질관리기준 적합판정서, 해외 제조원인 경우 제4조제1항제4호에 따른 유효기간 내의 제조증명서.
@@ -120,7 +120,7 @@ Cmaj, 변경허가(신고)
         hits.append(("Cmaj", r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. (해당되는 경우) 해당 품목을 제조하는 제조소에 ‘의약품 등의 안전에 관한 규칙’ 제48조의2에 따른 제조 및 품질관리기준 적합판정서, 해외 제조원인 경우 제4조제1항제4호에 따른 유효기간 내의 제조증명서.
 2. (S.2.1) 제조소명, 주소, 책임부과범위 및 해당하는 경우 수탁업소에 관한 자료.
@@ -129,11 +129,11 @@ Cmaj, 변경허가(신고)
 7. (S.4.1) 원료의약품 기준 및 시험방법에 관한 자료.
 10. 변경 전·후 출발 물질 또는 중간체의 최소 1배치에 대한 시험 성적서(해당하는 경우), 출발물질 또는 중간체 변경 전·후 최종 원료의약품 2배치에 대한 배치분석 자료.
 11. (S.7.2) 변경 후 원료의약품의 안정성 시험 필요성 고찰 및 필요한 경우 안정성 시험 이행 계획서."""))
-    elif (step6_selections.get("s2_2_sub_2c") == "변경 있음") and (step6_selections.get("s2_2_req_1") == "충족") and (step6_selections.get("s2_2_req_2") == "충족") and (step6_selections.get("s2_2_req_3") == "충족") and (step6_selections.get("s2_2_req_6") == "충족") and (step6_selections.get("s2_2_req_7") == "충족") and (step6_selections.get("s2_2_req_8") == "충족") and (step6_selections.get("s2_2_req_4") == "미충족") and (step6_selections.get("s2_2_req_5") == "미충족") and (step6_selections.get("s2_2_req_9") == "미충족") and (step6_selections.get("s2_2_req_10") == "미충족"):
+    if (step6_selections.get("s2_2_sub_2c") == "변경 있음") and (step6_selections.get("s2_2_req_1") == "충족") and (step6_selections.get("s2_2_req_2") == "충족") and (step6_selections.get("s2_2_req_3") == "충족") and (step6_selections.get("s2_2_req_6") == "충족") and (step6_selections.get("s2_2_req_7") == "충족") and (step6_selections.get("s2_2_req_8") == "충족") and (step6_selections.get("s2_2_req_4") == "미충족") and (step6_selections.get("s2_2_req_5") == "미충족") and (step6_selections.get("s2_2_req_9") == "미충족") and (step6_selections.get("s2_2_req_10") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 IR, 시판전보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. (해당되는 경우) 해당 품목을 제조하는 제조소에 ‘의약품 등의 안전에 관한 규칙’ 제48조의2에 따른 제조 및 품질관리기준 적합판정서, 해외 제조원인 경우 제4조제1항제4호에 따른 유효기간 내의 제조증명서.
@@ -144,18 +144,18 @@ IR, 시판전보고
         hits.append(("IR", r"""보고유형은 다음과 같습니다.
 
 IR, 시판전보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. (해당되는 경우) 해당 품목을 제조하는 제조소에 ‘의약품 등의 안전에 관한 규칙’ 제48조의2에 따른 제조 및 품질관리기준 적합판정서, 해외 제조원인 경우 제4조제1항제4호에 따른 유효기간 내의 제조증명서.
 2. (S.2.1) 제조소명, 주소, 책임부과범위 및 해당하는 경우 수탁업소에 관한 자료.
 4. 변경 전·후 제조소의 원료의약품, 중간체 또는 원료의약품 출발 물질 (해당되는 경우)제조 공정에 관한 자료.
 5. (S.4.4) 변경 전·후 원료의약품 2배치(파일럿 배치 이상)에 대한 배치분석자료 .
 8. (S.2) 원료의약품 및 핵심(최종) 중간체(해당되는 경우) 합성 경로, 사용 원료, 품질 관리 절차 및 규격 변경이 없다는 확인서(statement)."""))
-    elif (step6_selections.get("s2_2_sub_2c") == "변경 있음") and (step6_selections.get("s2_2_req_1") == "미충족") and (step6_selections.get("s2_2_req_2") == "미충족") and (step6_selections.get("s2_2_req_3") == "미충족") and (step6_selections.get("s2_2_req_4") == "미충족") and (step6_selections.get("s2_2_req_5") == "미충족") and (step6_selections.get("s2_2_req_6") == "미충족") and (step6_selections.get("s2_2_req_7") == "미충족") and (step6_selections.get("s2_2_req_8") == "미충족") and (step6_selections.get("s2_2_req_9") == "미충족") and (step6_selections.get("s2_2_req_10") == "미충족"):
+    if (step6_selections.get("s2_2_sub_2c") == "변경 있음") and (step6_selections.get("s2_2_req_1") == "미충족") and (step6_selections.get("s2_2_req_2") == "미충족") and (step6_selections.get("s2_2_req_3") == "미충족") and (step6_selections.get("s2_2_req_4") == "미충족") and (step6_selections.get("s2_2_req_5") == "미충족") and (step6_selections.get("s2_2_req_6") == "미충족") and (step6_selections.get("s2_2_req_7") == "미충족") and (step6_selections.get("s2_2_req_8") == "미충족") and (step6_selections.get("s2_2_req_9") == "미충족") and (step6_selections.get("s2_2_req_10") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. (해당되는 경우) 해당 품목을 제조하는 제조소에 ‘의약품 등의 안전에 관한 규칙’ 제48조의2에 따른 제조 및 품질관리기준 적합판정서, 해외 제조원인 경우 제4조제1항제4호에 따른 유효기간 내의 제조증명서.
@@ -171,7 +171,7 @@ Cmaj, 변경허가(신고)
         hits.append(("Cmaj", r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. (해당되는 경우) 해당 품목을 제조하는 제조소에 ‘의약품 등의 안전에 관한 규칙’ 제48조의2에 따른 제조 및 품질관리기준 적합판정서, 해외 제조원인 경우 제4조제1항제4호에 따른 유효기간 내의 제조증명서.
 2. (S.2.1) 제조소명, 주소, 책임부과범위 및 해당하는 경우 수탁업소에 관한 자료.
@@ -183,18 +183,18 @@ Cmaj, 변경허가(신고)
 9. 변경 후 원료의약품이 완제의약품의 안전성, 유효성 및 품질에 미치는 영향에 대한 고찰자료.
 10. 변경 전·후 출발 물질 또는 중간체의 최소 1배치에 대한 시험 성적서(해당하는 경우), 출발물질 또는 중간체 변경 전·후 최종 원료의약품 2배치에 대한 배치분석 자료.
 11. (S.7.2) 변경 후 원료의약품의 안정성 시험 필요성 고찰 및 필요한 경우 안정성 시험 이행 계획서."""))
-    elif (step6_selections.get("s2_2_sub_2c") == "변경 있음") and (step6_selections.get("s2_2_req_10") == "충족") and (step6_selections.get("s2_2_req_1") == "미충족") and (step6_selections.get("s2_2_req_2") == "미충족") and (step6_selections.get("s2_2_req_3") == "미충족") and (step6_selections.get("s2_2_req_4") == "미충족") and (step6_selections.get("s2_2_req_5") == "미충족") and (step6_selections.get("s2_2_req_6") == "미충족") and (step6_selections.get("s2_2_req_7") == "미충족") and (step6_selections.get("s2_2_req_8") == "미충족") and (step6_selections.get("s2_2_req_9") == "미충족"):
+    if (step6_selections.get("s2_2_sub_2c") == "변경 있음") and (step6_selections.get("s2_2_req_10") == "충족") and (step6_selections.get("s2_2_req_1") == "미충족") and (step6_selections.get("s2_2_req_2") == "미충족") and (step6_selections.get("s2_2_req_3") == "미충족") and (step6_selections.get("s2_2_req_4") == "미충족") and (step6_selections.get("s2_2_req_5") == "미충족") and (step6_selections.get("s2_2_req_6") == "미충족") and (step6_selections.get("s2_2_req_7") == "미충족") and (step6_selections.get("s2_2_req_8") == "미충족") and (step6_selections.get("s2_2_req_9") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 Cmin, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 12. 해당국가의 공식기관에서 발급받은 문서(GMP 증명서 등 포함) 또는 인증여부를 확인할 수 있는 자료(제조소의 책임자가 서명하고 공증받은 자료 등).""", unsafe_allow_html=True)
         hits.append(("Cmin", r"""보고유형은 다음과 같습니다.
 
 Cmin, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 12. 해당국가의 공식기관에서 발급받은 문서(GMP 증명서 등 포함) 또는 인증여부를 확인할 수 있는 자료(제조소의 책임자가 서명하고 공증받은 자료 등)."""))
     pass
@@ -203,7 +203,7 @@ if current_key == "s2_3":
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 IR, 시판전보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 2. 변경 전·후 제조방법 비교표 등 변경 전·후에 관한 자료
@@ -213,17 +213,17 @@ IR, 시판전보고
         hits.append(("IR", r"""보고유형은 다음과 같습니다.
 
 IR, 시판전보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 2. 변경 전·후 제조방법 비교표 등 변경 전·후에 관한 자료
 3. (S.2.2) 변경하고자 하는 합성 공정 흐름도 및 상세 제조 공정에 관한 자료.
 4. (S.2.3)(해당되는 경우) 변경하고자 하는 원료의약품 제조에 사용된 원료(예 : 원료약품, 출발 물질, 용매, 시약, 촉매)의 규격 및 시험 성적서.
 11. (S.4.4) 변경 전·후 원료의약품 최소 2배치(파일럿 배치 이상)에 대한 배치분석 자료."""))
-    elif (step6_selections.get("s2_3_req_1") == "충족") and (step6_selections.get("s2_3_req_2") == "충족") and (step6_selections.get("s2_3_req_3") == "충족") and (step6_selections.get("s2_3_req_5") == "충족") and (step6_selections.get("s2_3_req_6") == "충족") and (step6_selections.get("s2_3_req_7") == "충족") and (step6_selections.get("s2_3_req_9") == "충족") and (step6_selections.get("s2_3_req_4") == "미충족") and (step6_selections.get("s2_3_req_8") == "미충족"):
+    if (step6_selections.get("s2_3_req_1") == "충족") and (step6_selections.get("s2_3_req_2") == "충족") and (step6_selections.get("s2_3_req_3") == "충족") and (step6_selections.get("s2_3_req_5") == "충족") and (step6_selections.get("s2_3_req_6") == "충족") and (step6_selections.get("s2_3_req_7") == "충족") and (step6_selections.get("s2_3_req_9") == "충족") and (step6_selections.get("s2_3_req_4") == "미충족") and (step6_selections.get("s2_3_req_8") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 Cmin, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 2. 변경 전·후 제조방법 비교표 등 변경 전·후에 관한 자료
@@ -233,17 +233,17 @@ Cmin, 변경허가(신고)
         hits.append(("Cmin", r"""보고유형은 다음과 같습니다.
 
 Cmin, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 2. 변경 전·후 제조방법 비교표 등 변경 전·후에 관한 자료
 3. (S.2.2) 변경하고자 하는 합성 공정 흐름도 및 상세 제조 공정에 관한 자료.
 10. (S.4.1) 변경 후 원료의약품 기준 및 시험방법에 관한 자료.(변경되는 경우, 출발물질 및 중간체의 기준 및 시험방법)
 11. (S.4.4) 변경 전·후 원료의약품 최소 2배치(파일럿 배치 이상)에 대한 배치분석 자료."""))
-    elif (step6_selections.get("s2_3_req_1") == "충족") and (step6_selections.get("s2_3_req_2") == "충족") and (step6_selections.get("s2_3_req_3") == "충족") and (step6_selections.get("s2_3_req_4") == "충족") and (step6_selections.get("s2_3_req_5") == "충족") and (step6_selections.get("s2_3_req_6") == "충족") and (step6_selections.get("s2_3_req_7") == "미충족") and (step6_selections.get("s2_3_req_8") == "미충족") and (step6_selections.get("s2_3_req_9") == "미충족"):
+    if (step6_selections.get("s2_3_req_1") == "충족") and (step6_selections.get("s2_3_req_2") == "충족") and (step6_selections.get("s2_3_req_3") == "충족") and (step6_selections.get("s2_3_req_4") == "충족") and (step6_selections.get("s2_3_req_5") == "충족") and (step6_selections.get("s2_3_req_6") == "충족") and (step6_selections.get("s2_3_req_7") == "미충족") and (step6_selections.get("s2_3_req_8") == "미충족") and (step6_selections.get("s2_3_req_9") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 Cmin, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 2. 변경 전·후 제조방법 비교표 등 변경 전·후에 관한 자료
@@ -253,17 +253,17 @@ Cmin, 변경허가(신고)
         hits.append(("Cmin", r"""보고유형은 다음과 같습니다.
 
 Cmin, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 2. 변경 전·후 제조방법 비교표 등 변경 전·후에 관한 자료
 3. (S.2.2) 변경하고자 하는 합성 공정 흐름도 및 상세 제조 공정에 관한 자료.
 10. (S.4.1) 변경 후 원료의약품 기준 및 시험방법에 관한 자료.(변경되는 경우, 출발물질 및 중간체의 기준 및 시험방법)
 11. (S.4.4) 변경 전·후 원료의약품 최소 2배치(파일럿 배치 이상)에 대한 배치분석 자료."""))
-    elif (step6_selections.get("s2_3_req_1") == "미충족") and (step6_selections.get("s2_3_req_2") == "미충족") and (step6_selections.get("s2_3_req_3") == "미충족") and (step6_selections.get("s2_3_req_4") == "미충족") and (step6_selections.get("s2_3_req_5") == "미충족") and (step6_selections.get("s2_3_req_6") == "미충족") and (step6_selections.get("s2_3_req_7") == "미충족") and (step6_selections.get("s2_3_req_8") == "미충족") and (step6_selections.get("s2_3_req_9") == "미충족"):
+    if (step6_selections.get("s2_3_req_1") == "미충족") and (step6_selections.get("s2_3_req_2") == "미충족") and (step6_selections.get("s2_3_req_3") == "미충족") and (step6_selections.get("s2_3_req_4") == "미충족") and (step6_selections.get("s2_3_req_5") == "미충족") and (step6_selections.get("s2_3_req_6") == "미충족") and (step6_selections.get("s2_3_req_7") == "미충족") and (step6_selections.get("s2_3_req_8") == "미충족") and (step6_selections.get("s2_3_req_9") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. 변경 후 원료의약품이 완제의약품의 안전성, 유효성 및 품질에 미치는 영향에 대한 고찰자료. (완제의약품의 불순물 프로파일, 배치분석자료, 필요한 경우 안정성 자료 등)
@@ -282,7 +282,7 @@ Cmaj, 변경허가(신고)
         hits.append(("Cmaj", r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. 변경 후 원료의약품이 완제의약품의 안전성, 유효성 및 품질에 미치는 영향에 대한 고찰자료. (완제의약품의 불순물 프로파일, 배치분석자료, 필요한 경우 안정성 자료 등)
 2. 변경 전·후 제조방법 비교표 등 변경 전·후에 관한 자료
@@ -303,7 +303,7 @@ if current_key == "s2_4":
         st.markdown(r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. 변경 전·후 공정관리 시험 비교표 등 변경 전·후에 관한 자료
@@ -312,16 +312,16 @@ AR, 연차보고
         hits.append(("AR", r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. 변경 전·후 공정관리 시험 비교표 등 변경 전·후에 관한 자료
 2. (S.2.2) 변경 후 합성 공정 흐름도 및 제조 공정에 대한 서술 자료.
 3. (S.2.4) 변경 후 공정관리 시험 규격에 관한 자료."""))
-    elif (step6_selections.get("s2_4_sub_4b") == "변경 있음") and (step6_selections.get("s2_4_req_1") == "충족") and (step6_selections.get("s2_4_req_2") == "미충족") and (step6_selections.get("s2_4_req_3") == "미충족") and (step6_selections.get("s2_4_req_4") == "미충족") and (step6_selections.get("s2_4_req_5") == "미충족"):
+    if (step6_selections.get("s2_4_sub_4b") == "변경 있음") and (step6_selections.get("s2_4_req_1") == "충족") and (step6_selections.get("s2_4_req_2") == "미충족") and (step6_selections.get("s2_4_req_3") == "미충족") and (step6_selections.get("s2_4_req_4") == "미충족") and (step6_selections.get("s2_4_req_5") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. 변경 전·후 공정관리 시험 비교표 등 변경 전·후에 관한 자료
@@ -332,18 +332,18 @@ AR, 연차보고
         hits.append(("AR", r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. 변경 전·후 공정관리 시험 비교표 등 변경 전·후에 관한 자료
 2. (S.2.2) 변경 후 합성 공정 흐름도 및 제조 공정에 대한 서술 자료.
 3. (S.2.4) 변경 후 공정관리 시험 규격에 관한 자료.
 4. 해당되는 경우, 분석 방법 상세 자료.
 5. 공정관리 시험(추가, 교체, 삭제, 완화되는) 규격에 대한 타당성 입증 자료 또는 설명자료."""))
-    elif (step6_selections.get("s2_4_sub_4c") == "변경 있음") and (step6_selections.get("s2_4_req_1") == "미충족") and (step6_selections.get("s2_4_req_2") == "미충족") and (step6_selections.get("s2_4_req_3") == "미충족") and (step6_selections.get("s2_4_req_4") == "미충족") and (step6_selections.get("s2_4_req_5") == "미충족") and (step6_selections.get("s2_4_req_7") == "미충족") and (step6_selections.get("s2_4_req_8") == "미충족") and (step6_selections.get("s2_4_req_9") == "미충족") and (step6_selections.get("s2_4_req_10") == "미충족"):
+    if (step6_selections.get("s2_4_sub_4c") == "변경 있음") and (step6_selections.get("s2_4_req_1") == "미충족") and (step6_selections.get("s2_4_req_2") == "미충족") and (step6_selections.get("s2_4_req_3") == "미충족") and (step6_selections.get("s2_4_req_4") == "미충족") and (step6_selections.get("s2_4_req_5") == "미충족") and (step6_selections.get("s2_4_req_7") == "미충족") and (step6_selections.get("s2_4_req_8") == "미충족") and (step6_selections.get("s2_4_req_9") == "미충족") and (step6_selections.get("s2_4_req_10") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 Cmin, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. 변경 전·후 공정관리 시험 비교표 등 변경 전·후에 관한 자료
@@ -357,7 +357,7 @@ Cmin, 변경허가(신고)
         hits.append(("Cmin", r"""보고유형은 다음과 같습니다.
 
 Cmin, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. 변경 전·후 공정관리 시험 비교표 등 변경 전·후에 관한 자료
 2. (S.2.2) 변경 후 합성 공정 흐름도 및 제조 공정에 대한 서술 자료.
@@ -367,11 +367,11 @@ Cmin, 변경허가(신고)
 8. (S.3.2) 해당변경이 불순물에 영향을 미칠 경우, 불순물에 대한 고찰 및 근거자료.
 9. (S.4.1) 변경 후 원료의약품(해당되는 경우 중간체) 규격에 관한 자료.
 10. (S.4.4) 변경 전·후 원료의약품 최소 1배치(파일럿 배치 이상)의 배치분석자료."""))
-    elif (step6_selections.get("s2_4_sub_4d") == "변경 있음") and (step6_selections.get("s2_4_req_1") == "충족") and (step6_selections.get("s2_4_req_4") == "충족") and (step6_selections.get("s2_4_req_5") == "충족") and (step6_selections.get("s2_4_req_2") == "미충족") and (step6_selections.get("s2_4_req_3") == "미충족"):
+    if (step6_selections.get("s2_4_sub_4d") == "변경 있음") and (step6_selections.get("s2_4_req_1") == "충족") and (step6_selections.get("s2_4_req_4") == "충족") and (step6_selections.get("s2_4_req_5") == "충족") and (step6_selections.get("s2_4_req_2") == "미충족") and (step6_selections.get("s2_4_req_3") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. 변경 전·후 공정관리 시험 비교표 등 변경 전·후에 관한 자료
@@ -381,17 +381,17 @@ AR, 연차보고
         hits.append(("AR", r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. 변경 전·후 공정관리 시험 비교표 등 변경 전·후에 관한 자료
 2. (S.2.2) 변경 후 합성 공정 흐름도 및 제조 공정에 대한 서술 자료.
 3. (S.2.4) 변경 후 공정관리 시험 규격에 관한 자료.
 6. 삭제되는 공정관리시험이 품질에 영향을 미치지 않음을 입증하는 자료(또는 위험 평가 자료)."""))
-    elif (step6_selections.get("s2_4_sub_4d") == "변경 있음") and (step6_selections.get("s2_4_req_1") == "충족") and (step6_selections.get("s2_4_req_2") == "미충족") and (step6_selections.get("s2_4_req_3") == "미충족") and (step6_selections.get("s2_4_req_4") == "미충족") and (step6_selections.get("s2_4_req_5") == "미충족"):
+    if (step6_selections.get("s2_4_sub_4d") == "변경 있음") and (step6_selections.get("s2_4_req_1") == "충족") and (step6_selections.get("s2_4_req_2") == "미충족") and (step6_selections.get("s2_4_req_3") == "미충족") and (step6_selections.get("s2_4_req_4") == "미충족") and (step6_selections.get("s2_4_req_5") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. 변경 전·후 공정관리 시험 비교표 등 변경 전·후에 관한 자료
@@ -405,7 +405,7 @@ Cmaj, 변경허가(신고)
         hits.append(("Cmaj", r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. 변경 전·후 공정관리 시험 비교표 등 변경 전·후에 관한 자료
 2. (S.2.2) 변경 후 합성 공정 흐름도 및 제조 공정에 대한 서술 자료.
@@ -415,11 +415,11 @@ Cmaj, 변경허가(신고)
 8. (S.3.2) 해당변경이 불순물에 영향을 미칠 경우, 불순물에 대한 고찰 및 근거자료.
 9. (S.4.1) 변경 후 원료의약품(해당되는 경우 중간체) 규격에 관한 자료.
 10. (S.4.4) 변경 전·후 원료의약품 최소 1배치(파일럿 배치 이상)의 배치분석자료."""))
-    elif (step6_selections.get("s2_4_sub_4e") == "변경 있음") and (step6_selections.get("s2_4_req_1") == "충족") and (step6_selections.get("s2_4_req_2") == "미충족") and (step6_selections.get("s2_4_req_3") == "미충족") and (step6_selections.get("s2_4_req_4") == "미충족") and (step6_selections.get("s2_4_req_5") == "미충족"):
+    if (step6_selections.get("s2_4_sub_4e") == "변경 있음") and (step6_selections.get("s2_4_req_1") == "충족") and (step6_selections.get("s2_4_req_2") == "미충족") and (step6_selections.get("s2_4_req_3") == "미충족") and (step6_selections.get("s2_4_req_4") == "미충족") and (step6_selections.get("s2_4_req_5") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. 변경 전·후 공정관리 시험 비교표 등 변경 전·후에 관한 자료
@@ -433,7 +433,7 @@ Cmaj, 변경허가(신고)
         hits.append(("Cmaj", r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. 변경 전·후 공정관리 시험 비교표 등 변경 전·후에 관한 자료
 2. (S.2.2) 변경 후 합성 공정 흐름도 및 제조 공정에 대한 서술 자료.
@@ -449,7 +449,7 @@ if current_key == "s2_5":
         st.markdown(r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. (S.2.2) 변경 전·후 제조공정 비교표 및 변경 후 상세 제조 공정에 관한 자료.
@@ -459,17 +459,17 @@ AR, 연차보고
         hits.append(("AR", r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. (S.2.2) 변경 전·후 제조공정 비교표 및 변경 후 상세 제조 공정에 관한 자료.
 2. (S.2.5) (해당되는 경우, 위험도 평가에 따른) 무균공정과 멸균 공정 밸리데이션 또는 평가결과에 관한 자료.
 3. (S.4.1) 원료의약품의 규격에 관한 자료(해당되는 경우 중간체 규격에 관한 자료).
 4. (S.4.4) 변경 전·후 제조 규모에서 각 최소 1배치에 대한 배치 분석 자료."""))
-    elif (step6_selections.get("s2_5_sub_5b") == "변경 있음") and (step6_selections.get("s2_5_req_1") == "충족") and (step6_selections.get("s2_5_req_2") == "충족") and (step6_selections.get("s2_5_req_3") == "충족"):
+    if (step6_selections.get("s2_5_sub_5b") == "변경 있음") and (step6_selections.get("s2_5_req_1") == "충족") and (step6_selections.get("s2_5_req_2") == "충족") and (step6_selections.get("s2_5_req_3") == "충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. (S.2.2) 변경 전·후 제조공정 비교표 및 변경 후 상세 제조 공정에 관한 자료.
@@ -479,17 +479,17 @@ AR, 연차보고
         hits.append(("AR", r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. (S.2.2) 변경 전·후 제조공정 비교표 및 변경 후 상세 제조 공정에 관한 자료.
 2. (S.2.5) (해당되는 경우, 위험도 평가에 따른) 무균공정과 멸균 공정 밸리데이션 또는 평가결과에 관한 자료.
 3. (S.4.1) 원료의약품의 규격에 관한 자료(해당되는 경우 중간체 규격에 관한 자료).
 4. (S.4.4) 변경 전·후 제조 규모에서 각 최소 1배치에 대한 배치 분석 자료."""))
-    elif (step6_selections.get("s2_5_sub_5c") == "변경 있음") and (step6_selections.get("s2_5_req_1") == "충족") and (step6_selections.get("s2_5_req_2") == "충족") and (step6_selections.get("s2_5_req_3") == "충족"):
+    if (step6_selections.get("s2_5_sub_5c") == "변경 있음") and (step6_selections.get("s2_5_req_1") == "충족") and (step6_selections.get("s2_5_req_2") == "충족") and (step6_selections.get("s2_5_req_3") == "충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 Cmin, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. (S.2.2) 변경 전·후 제조공정 비교표 및 변경 후 상세 제조 공정에 관한 자료.
@@ -499,7 +499,7 @@ Cmin, 변경허가(신고)
         hits.append(("Cmin", r"""보고유형은 다음과 같습니다.
 
 Cmin, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. (S.2.2) 변경 전·후 제조공정 비교표 및 변경 후 상세 제조 공정에 관한 자료.
 2. (S.2.5) (해당되는 경우, 위험도 평가에 따른) 무균공정과 멸균 공정 밸리데이션 또는 평가결과에 관한 자료.
@@ -511,7 +511,7 @@ if current_key == "s2_6":
         st.markdown(r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. 변경 전·후 규격 비교표 등 변경 전·후에 관한 자료.
@@ -520,16 +520,16 @@ AR, 연차보고
         hits.append(("AR", r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. 변경 전·후 규격 비교표 등 변경 전·후에 관한 자료.
 2. (S.2.3) 원료의약품의 제조에 사용하는 변경된 원료의 정보(규격 또는 공급처 성적서).
 3. (S.2.4) (해당하는 경우) 변경된 중간체에 대한 정보(규격 또는 공급처 성적서)."""))
-    elif (step6_selections.get("s2_6_sub_6b") == "변경 있음") and (step6_selections.get("s2_6_req_4") == "충족") and (step6_selections.get("s2_6_req_5") == "충족") and (step6_selections.get("s2_6_req_6") == "충족") and (step6_selections.get("s2_6_req_1") == "미충족") and (step6_selections.get("s2_6_req_2") == "미충족") and (step6_selections.get("s2_6_req_3") == "미충족") and (step6_selections.get("s2_6_req_7") == "미충족") and (step6_selections.get("s2_6_req_8") == "미충족") and (step6_selections.get("s2_6_req_9") == "미충족"):
+    if (step6_selections.get("s2_6_sub_6b") == "변경 있음") and (step6_selections.get("s2_6_req_4") == "충족") and (step6_selections.get("s2_6_req_5") == "충족") and (step6_selections.get("s2_6_req_6") == "충족") and (step6_selections.get("s2_6_req_1") == "미충족") and (step6_selections.get("s2_6_req_2") == "미충족") and (step6_selections.get("s2_6_req_3") == "미충족") and (step6_selections.get("s2_6_req_7") == "미충족") and (step6_selections.get("s2_6_req_8") == "미충족") and (step6_selections.get("s2_6_req_9") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 2. (S.2.3) 원료의약품의 제조에 사용하는 변경된 원료의 정보(규격 또는 공급처 성적서).
@@ -537,15 +537,15 @@ AR, 연차보고
         hits.append(("AR", r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 2. (S.2.3) 원료의약품의 제조에 사용하는 변경된 원료의 정보(규격 또는 공급처 성적서).
 3. (S.2.4) (해당하는 경우) 변경된 중간체에 대한 정보(규격 또는 공급처 성적서)."""))
-    elif (step6_selections.get("s2_6_sub_6c") == "변경 있음") and (step6_selections.get("s2_6_req_1") == "충족") and (step6_selections.get("s2_6_req_5") == "충족") and (step6_selections.get("s2_6_req_6") == "충족") and (step6_selections.get("s2_6_req_7") == "충족") and (step6_selections.get("s2_6_req_2") == "미충족") and (step6_selections.get("s2_6_req_3") == "미충족") and (step6_selections.get("s2_6_req_4") == "미충족") and (step6_selections.get("s2_6_req_8") == "미충족") and (step6_selections.get("s2_6_req_9") == "미충족"):
+    if (step6_selections.get("s2_6_sub_6c") == "변경 있음") and (step6_selections.get("s2_6_req_1") == "충족") and (step6_selections.get("s2_6_req_5") == "충족") and (step6_selections.get("s2_6_req_6") == "충족") and (step6_selections.get("s2_6_req_7") == "충족") and (step6_selections.get("s2_6_req_2") == "미충족") and (step6_selections.get("s2_6_req_3") == "미충족") and (step6_selections.get("s2_6_req_4") == "미충족") and (step6_selections.get("s2_6_req_8") == "미충족") and (step6_selections.get("s2_6_req_9") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. 변경 전·후 규격 비교표 등 변경 전·후에 관한 자료.
@@ -554,16 +554,16 @@ AR, 연차보고
         hits.append(("AR", r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. 변경 전·후 규격 비교표 등 변경 전·후에 관한 자료.
 2. (S.2.3) 원료의약품의 제조에 사용하는 변경된 원료의 정보(규격 또는 공급처 성적서).
 3. (S.2.4) (해당하는 경우) 변경된 중간체에 대한 정보(규격 또는 공급처 성적서)."""))
-    elif (step6_selections.get("s2_6_sub_6d") == "변경 있음") and (step6_selections.get("s2_6_req_1") == "충족") and (step6_selections.get("s2_6_req_8") == "충족") and (step6_selections.get("s2_6_req_9") == "충족") and (step6_selections.get("s2_6_req_2") == "미충족") and (step6_selections.get("s2_6_req_3") == "미충족") and (step6_selections.get("s2_6_req_4") == "미충족") and (step6_selections.get("s2_6_req_5") == "미충족") and (step6_selections.get("s2_6_req_6") == "미충족") and (step6_selections.get("s2_6_req_7") == "미충족"):
+    if (step6_selections.get("s2_6_sub_6d") == "변경 있음") and (step6_selections.get("s2_6_req_1") == "충족") and (step6_selections.get("s2_6_req_8") == "충족") and (step6_selections.get("s2_6_req_9") == "충족") and (step6_selections.get("s2_6_req_2") == "미충족") and (step6_selections.get("s2_6_req_3") == "미충족") and (step6_selections.get("s2_6_req_4") == "미충족") and (step6_selections.get("s2_6_req_5") == "미충족") and (step6_selections.get("s2_6_req_6") == "미충족") and (step6_selections.get("s2_6_req_7") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. 변경 전·후 규격 비교표 등 변경 전·후에 관한 자료.
@@ -573,17 +573,17 @@ AR, 연차보고
         hits.append(("AR", r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. 변경 전·후 규격 비교표 등 변경 전·후에 관한 자료.
 2. (S.2.3) 원료의약품의 제조에 사용하는 변경된 원료의 정보(규격 또는 공급처 성적서).
 3. (S.2.4) (해당하는 경우) 변경된 중간체에 대한 정보(규격 또는 공급처 성적서).
 4. 해당 변경이 품질에 영향을 미치지 않음을 입증하는 자료(또는 위험 평가 자료)."""))
-    elif (step6_selections.get("s2_6_sub_6e") == "변경 있음") and (step6_selections.get("s2_6_req_1") == "미충족") and (step6_selections.get("s2_6_req_2") == "미충족") and (step6_selections.get("s2_6_req_3") == "미충족") and (step6_selections.get("s2_6_req_4") == "미충족") and (step6_selections.get("s2_6_req_5") == "미충족") and (step6_selections.get("s2_6_req_6") == "미충족") and (step6_selections.get("s2_6_req_7") == "미충족") and (step6_selections.get("s2_6_req_8") == "미충족") and (step6_selections.get("s2_6_req_9") == "미충족"):
+    if (step6_selections.get("s2_6_sub_6e") == "변경 있음") and (step6_selections.get("s2_6_req_1") == "미충족") and (step6_selections.get("s2_6_req_2") == "미충족") and (step6_selections.get("s2_6_req_3") == "미충족") and (step6_selections.get("s2_6_req_4") == "미충족") and (step6_selections.get("s2_6_req_5") == "미충족") and (step6_selections.get("s2_6_req_6") == "미충족") and (step6_selections.get("s2_6_req_7") == "미충족") and (step6_selections.get("s2_6_req_8") == "미충족") and (step6_selections.get("s2_6_req_9") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. 변경 전·후 규격 비교표 등 변경 전·후에 관한 자료.
@@ -594,18 +594,18 @@ Cmaj, 변경허가(신고)
         hits.append(("Cmaj", r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. 변경 전·후 규격 비교표 등 변경 전·후에 관한 자료.
 2. (S.2.3) 원료의약품의 제조에 사용하는 변경된 원료의 정보(규격 또는 공급처 성적서).
 3. (S.2.4) (해당하는 경우) 변경된 중간체에 대한 정보(규격 또는 공급처 성적서).
 4. 해당 변경이 품질에 영향을 미치지 않음을 입증하는 자료(또는 위험 평가 자료).
 5. (S.3.2) (해당하는 경우) 불순물에 대한 고찰 및 근거자료."""))
-    elif (step6_selections.get("s2_6_sub_6f") == "변경 있음") and (step6_selections.get("s2_6_req_3") == "충족") and (step6_selections.get("s2_6_req_6") == "충족") and (step6_selections.get("s2_6_req_7") == "충족") and (step6_selections.get("s2_6_req_9") == "충족") and (step6_selections.get("s2_6_req_1") == "미충족") and (step6_selections.get("s2_6_req_2") == "미충족") and (step6_selections.get("s2_6_req_4") == "미충족") and (step6_selections.get("s2_6_req_5") == "미충족") and (step6_selections.get("s2_6_req_8") == "미충족"):
+    if (step6_selections.get("s2_6_sub_6f") == "변경 있음") and (step6_selections.get("s2_6_req_3") == "충족") and (step6_selections.get("s2_6_req_6") == "충족") and (step6_selections.get("s2_6_req_7") == "충족") and (step6_selections.get("s2_6_req_9") == "충족") and (step6_selections.get("s2_6_req_1") == "미충족") and (step6_selections.get("s2_6_req_2") == "미충족") and (step6_selections.get("s2_6_req_4") == "미충족") and (step6_selections.get("s2_6_req_5") == "미충족") and (step6_selections.get("s2_6_req_8") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. 변경 전·후 규격 비교표 등 변경 전·후에 관한 자료.
@@ -613,15 +613,15 @@ AR, 연차보고
         hits.append(("AR", r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. 변경 전·후 규격 비교표 등 변경 전·후에 관한 자료.
 2. (S.2.3) 원료의약품의 제조에 사용하는 변경된 원료의 정보(규격 또는 공급처 성적서)."""))
-    elif (step6_selections.get("s2_6_sub_6g") == "변경 있음") and (step6_selections.get("s2_6_req_1") == "미충족") and (step6_selections.get("s2_6_req_2") == "미충족") and (step6_selections.get("s2_6_req_3") == "미충족") and (step6_selections.get("s2_6_req_4") == "미충족") and (step6_selections.get("s2_6_req_5") == "미충족") and (step6_selections.get("s2_6_req_6") == "미충족") and (step6_selections.get("s2_6_req_7") == "미충족") and (step6_selections.get("s2_6_req_8") == "미충족") and (step6_selections.get("s2_6_req_9") == "미충족"):
+    if (step6_selections.get("s2_6_sub_6g") == "변경 있음") and (step6_selections.get("s2_6_req_1") == "미충족") and (step6_selections.get("s2_6_req_2") == "미충족") and (step6_selections.get("s2_6_req_3") == "미충족") and (step6_selections.get("s2_6_req_4") == "미충족") and (step6_selections.get("s2_6_req_5") == "미충족") and (step6_selections.get("s2_6_req_6") == "미충족") and (step6_selections.get("s2_6_req_7") == "미충족") and (step6_selections.get("s2_6_req_8") == "미충족") and (step6_selections.get("s2_6_req_9") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. 변경 전·후 규격 비교표 등 변경 전·후에 관한 자료.
@@ -632,7 +632,7 @@ Cmaj, 변경허가(신고)
         hits.append(("Cmaj", r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. 변경 전·후 규격 비교표 등 변경 전·후에 관한 자료.
 2. (S.2.3) 원료의약품의 제조에 사용하는 변경된 원료의 정보(규격 또는 공급처 성적서).
@@ -645,7 +645,7 @@ if current_key == "p1_7":
         st.markdown(r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 2. (P.1) 완제의약품의 성상 및 원료약품 분량.
@@ -657,7 +657,7 @@ AR, 연차보고
         hits.append(("AR", r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 2. (P.1) 완제의약품의 성상 및 원료약품 분량.
 3. (P.2) 변경하고자 하는 제제의 성분에 대한 검토 자료(예: 첨가제의 선택, 원료의약품과 첨가제의 배합 적합성).
@@ -665,11 +665,11 @@ AR, 연차보고
 5. (P.4) 첨가제 종류를 변경/추가하는 경우, 첨가제의 규격에 관한 자료.
 7. (P.5) 완제의약품의 기준 및 시험방법, 최소 1배치(파일럿 배치 이상)에 대한 시험 성적서.
 10. (P.8.2) 변경하고자 하는 제제의 생산 규모 배치에 대한 안정성 시험 계획서 및 이행서약."""))
-    elif (step6_selections.get("p1_7_sub_7b") == "변경 있음") and (step6_selections.get("p1_7_req_1") == "충족") and (step6_selections.get("p1_7_req_2") == "충족") and (step6_selections.get("p1_7_req_3") == "충족") and (step6_selections.get("p1_7_req_4") == "충족") and (step6_selections.get("p1_7_req_5") == "충족"):
+    if (step6_selections.get("p1_7_sub_7b") == "변경 있음") and (step6_selections.get("p1_7_req_1") == "충족") and (step6_selections.get("p1_7_req_2") == "충족") and (step6_selections.get("p1_7_req_3") == "충족") and (step6_selections.get("p1_7_req_4") == "충족") and (step6_selections.get("p1_7_req_5") == "충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 IR, 시판전보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 2. (P.1) 완제의약품의 성상 및 원료약품 분량.
@@ -680,18 +680,18 @@ IR, 시판전보고
         hits.append(("IR", r"""보고유형은 다음과 같습니다.
 
 IR, 시판전보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 2. (P.1) 완제의약품의 성상 및 원료약품 분량.
 5. (P.4) 첨가제 종류를 변경/추가하는 경우, 첨가제의 규격에 관한 자료.
 7. (P.5) 완제의약품의 기준 및 시험방법, 최소 1배치(파일럿 배치 이상)에 대한 시험 성적서.
 8. (P.5.3) 해당되는 경우, 변경된 첨가제가 완제의약품의 분석 절차를 방해하지 않는다는 것을 입증하는 자료.
 10. (P.8.2) 변경하고자 하는 제제의 생산 규모 배치에 대한 안정성 시험 계획서 및 이행서약."""))
-    elif (step6_selections.get("p1_7_sub_7b") == "변경 있음") and (step6_selections.get("p1_7_req_1") == "충족") and (step6_selections.get("p1_7_req_2") == "충족") and (step6_selections.get("p1_7_req_3") == "충족") and (step6_selections.get("p1_7_req_4") == "충족") and (step6_selections.get("p1_7_req_5") == "미충족"):
+    if (step6_selections.get("p1_7_sub_7b") == "변경 있음") and (step6_selections.get("p1_7_req_1") == "충족") and (step6_selections.get("p1_7_req_2") == "충족") and (step6_selections.get("p1_7_req_3") == "충족") and (step6_selections.get("p1_7_req_4") == "충족") and (step6_selections.get("p1_7_req_5") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 Cmin, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 2. (P.1) 완제의약품의 성상 및 원료약품 분량.
@@ -701,20 +701,20 @@ Cmin, 변경허가(신고)
         hits.append(("Cmin", r"""보고유형은 다음과 같습니다.
 
 Cmin, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 2. (P.1) 완제의약품의 성상 및 원료약품 분량.
 5. (P.4) 첨가제 종류를 변경/추가하는 경우, 첨가제의 규격에 관한 자료.
 7. (P.5) 완제의약품의 기준 및 시험방법, 최소 1배치(파일럿 배치 이상)에 대한 시험 성적서.
 8. (P.5.3) 해당되는 경우, 변경된 첨가제가 완제의약품의 분석 절차를 방해하지 않는다는 것을 입증하는 자료."""))
-    elif (step6_selections.get("p1_7_sub_7c") == "변경 있음") and (step6_selections.get("p1_7_req_1") == "충족") and (step6_selections.get("p1_7_req_4") == "충족") and (step6_selections.get("p1_7_req_2") == "미충족") and (step6_selections.get("p1_7_req_3") == "미충족") and (step6_selections.get("p1_7_req_5") == "미충족") and (step6_selections.get("p1_7_req_6") == "미충족") and (step6_selections.get("p1_7_req_7") == "미충족") and (step6_selections.get("p1_7_req_8") == "미충족") and (step6_selections.get("p1_7_req_9") == "미충족") and (step6_selections.get("p1_7_req_10") == "미충족"):
+    if (step6_selections.get("p1_7_sub_7c") == "변경 있음") and (step6_selections.get("p1_7_req_1") == "충족") and (step6_selections.get("p1_7_req_4") == "충족") and (step6_selections.get("p1_7_req_2") == "미충족") and (step6_selections.get("p1_7_req_3") == "미충족") and (step6_selections.get("p1_7_req_5") == "미충족") and (step6_selections.get("p1_7_req_6") == "미충족") and (step6_selections.get("p1_7_req_7") == "미충족") and (step6_selections.get("p1_7_req_8") == "미충족") and (step6_selections.get("p1_7_req_9") == "미충족") and (step6_selections.get("p1_7_req_10") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
-1. (P.2 또는 R) 「의약품동등성시험기준」 [별표2] 원료약품 및 그 분량 변경수준 및 제출자료 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
+1. (P.2 또는 R) \u300C의약품동등성시험기준\u300D [별표2] 원료약품 및 그 분량 변경수준 및 제출자료 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
 2. (P.1) 완제의약품의 성상 및 원료약품 분량.
 3. (P.2) 변경하고자 하는 제제의 성분에 대한 검토 자료(예: 첨가제의 선택, 원료의약품과 첨가제의 배합 적합성).
 4. (P.3) 배치 조성에 대한 자료.
@@ -727,9 +727,9 @@ Cmaj, 변경허가(신고)
         hits.append(("Cmaj", r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
-1. (P.2 또는 R) 「의약품동등성시험기준」 [별표2] 원료약품 및 그 분량 변경수준 및 제출자료 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
+1. (P.2 또는 R) \u300C의약품동등성시험기준\u300D [별표2] 원료약품 및 그 분량 변경수준 및 제출자료 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
 2. (P.1) 완제의약품의 성상 및 원료약품 분량.
 3. (P.2) 변경하고자 하는 제제의 성분에 대한 검토 자료(예: 첨가제의 선택, 원료의약품과 첨가제의 배합 적합성).
 4. (P.3) 배치 조성에 대한 자료.
@@ -745,20 +745,20 @@ if current_key == "p1_8":
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. (P.1) 완제의약품의 원료약품 분량.
-2. (P.2 또는 R) 「의약품동등성시험기준」 [별표2] 원료약품 및 그 분량 변경수준 및 제출자료 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
+2. (P.2 또는 R) \u300C의약품동등성시험기준\u300D [별표2] 원료약품 및 그 분량 변경수준 및 제출자료 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
 3. (P.3) 배치 조성에 대한 자료.
 4. (P.5) 최소 1배치(파일럿 배치 이상) 완제의약품 기준 및 시험방법 및 시험 성적서.""", unsafe_allow_html=True)
         hits.append(("Cmaj", r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. (P.1) 완제의약품의 원료약품 분량.
-2. (P.2 또는 R) 「의약품동등성시험기준」 [별표2] 원료약품 및 그 분량 변경수준 및 제출자료 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
+2. (P.2 또는 R) \u300C의약품동등성시험기준\u300D [별표2] 원료약품 및 그 분량 변경수준 및 제출자료 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
 3. (P.3) 배치 조성에 대한 자료.
 4. (P.5) 최소 1배치(파일럿 배치 이상) 완제의약품 기준 및 시험방법 및 시험 성적서."""))
     pass
@@ -767,10 +767,10 @@ if current_key == "p1_9":
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
-1. (P.2 또는 R) 「의약품동등성시험기준」 [별표2] 원료약품 및 그 분량 변경수준 및 제출자료 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료로서, 완제의약품의 물리화학적 특성에 변화가 없음을 입증할 수 있는 이화학적동등성시험자료(예. 점도, 삼투압, pH 등).
+1. (P.2 또는 R) \u300C의약품동등성시험기준\u300D [별표2] 원료약품 및 그 분량 변경수준 및 제출자료 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료로서, 완제의약품의 물리화학적 특성에 변화가 없음을 입증할 수 있는 이화학적동등성시험자료(예. 점도, 삼투압, pH 등).
 3. (P.1) 완제의약품의 성상 및 조성.
 4. (P.2) 변경하고자 하는 제제의 구성 성분에 대한 검토 자료(예: 첨가제의 선택, 원료약품과 첨가제 간의 배합성, 변경된 제제의 포장 시스템 적합성 시험), 주사제, 점안제 및 점이제의 경우 유효성분에 영향을 미치지 않음을 입증하는 자료로서 변경가능 첨가제 내 종류가 상이하거나 종류는 동일하고 분량만 상이한 경우 가속 6개월 안정성 시험자료 제출
 5. (P.3) 배치 조성, 제조 공정 및 공정 관리의 설명 자료, 중요 공정 및 중간체의 관리, (위험도 평가에 따른) 공정 밸리데이션 계획서 및/또는 평가에 대한 자료.
@@ -783,9 +783,9 @@ Cmaj, 변경허가(신고)
         hits.append(("Cmaj", r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
-1. (P.2 또는 R) 「의약품동등성시험기준」 [별표2] 원료약품 및 그 분량 변경수준 및 제출자료 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료로서, 완제의약품의 물리화학적 특성에 변화가 없음을 입증할 수 있는 이화학적동등성시험자료(예. 점도, 삼투압, pH 등).
+1. (P.2 또는 R) \u300C의약품동등성시험기준\u300D [별표2] 원료약품 및 그 분량 변경수준 및 제출자료 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료로서, 완제의약품의 물리화학적 특성에 변화가 없음을 입증할 수 있는 이화학적동등성시험자료(예. 점도, 삼투압, pH 등).
 3. (P.1) 완제의약품의 성상 및 조성.
 4. (P.2) 변경하고자 하는 제제의 구성 성분에 대한 검토 자료(예: 첨가제의 선택, 원료약품과 첨가제 간의 배합성, 변경된 제제의 포장 시스템 적합성 시험), 주사제, 점안제 및 점이제의 경우 유효성분에 영향을 미치지 않음을 입증하는 자료로서 변경가능 첨가제 내 종류가 상이하거나 종류는 동일하고 분량만 상이한 경우 가속 6개월 안정성 시험자료 제출
 5. (P.3) 배치 조성, 제조 공정 및 공정 관리의 설명 자료, 중요 공정 및 중간체의 관리, (위험도 평가에 따른) 공정 밸리데이션 계획서 및/또는 평가에 대한 자료.
@@ -795,14 +795,14 @@ Cmaj, 변경허가(신고)
 9. (P.5.3) 해당되는 경우, 변경된 첨가제가 완제의약품의 분석 절차를 방해하지 않는다는 것을 입증하는 자료.
 10. (P.8.1) 변경 후 완제의약품 최소 2배치(파일럿 배치 이상)에 대한 장기 및 가속 안정성 시험 최소 3개월 자료. 생물학적동등성시험을 제출하는 경우, 장기 및 가속 최소 6개월 자료
 11. (P.8.2) 변경하고자 하는 제제의 생산규모 배치에 대한 안정성 시험 계획서 및 이행서약."""))
-    elif (step6_selections.get("p1_9_req_8") == "충족") and (step6_selections.get("p1_9_req_9") == "충족") and (step6_selections.get("p1_9_req_1") == "미충족") and (step6_selections.get("p1_9_req_2") == "미충족") and (step6_selections.get("p1_9_req_3") == "미충족") and (step6_selections.get("p1_9_req_4") == "미충족") and (step6_selections.get("p1_9_req_5") == "미충족") and (step6_selections.get("p1_9_req_6") == "미충족") and (step6_selections.get("p1_9_req_7") == "미충족"):
+    if (step6_selections.get("p1_9_req_8") == "충족") and (step6_selections.get("p1_9_req_9") == "충족") and (step6_selections.get("p1_9_req_1") == "미충족") and (step6_selections.get("p1_9_req_2") == "미충족") and (step6_selections.get("p1_9_req_3") == "미충족") and (step6_selections.get("p1_9_req_4") == "미충족") and (step6_selections.get("p1_9_req_5") == "미충족") and (step6_selections.get("p1_9_req_6") == "미충족") and (step6_selections.get("p1_9_req_7") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
-2. (P.2 또는 R) 「의약품동등성시험기준」 [별표2] 원료약품 및 그 분량 변경수준 및 제출자료 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료로서, 생물학적동등성시험자료 또는 비교임상시험자료, 또는 생물학적동등성시험자료를 갈음할 수 있는 타당한 자료.
+2. (P.2 또는 R) \u300C의약품동등성시험기준\u300D [별표2] 원료약품 및 그 분량 변경수준 및 제출자료 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료로서, 생물학적동등성시험자료 또는 비교임상시험자료, 또는 생물학적동등성시험자료를 갈음할 수 있는 타당한 자료.
 3. (P.1) 완제의약품의 성상 및 조성.
 4. (P.2) 변경하고자 하는 제제의 구성 성분에 대한 검토 자료(예: 첨가제의 선택, 원료약품과 첨가제 간의 배합성, 변경된 제제의 포장 시스템 적합성 시험), 주사제, 점안제 및 점이제의 경우 유효성분에 영향을 미치지 않음을 입증하는 자료로서 변경가능 첨가제 내 종류가 상이하거나 종류는 동일하고 분량만 상이한 경우 가속 6개월 안정성 시험자료 제출
 5. (P.3) 배치 조성, 제조 공정 및 공정 관리의 설명 자료, 중요 공정 및 중간체의 관리, (위험도 평가에 따른) 공정 밸리데이션 계획서 및/또는 평가에 대한 자료.
@@ -815,9 +815,9 @@ Cmaj, 변경허가(신고)
         hits.append(("Cmaj", r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
-2. (P.2 또는 R) 「의약품동등성시험기준」 [별표2] 원료약품 및 그 분량 변경수준 및 제출자료 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료로서, 생물학적동등성시험자료 또는 비교임상시험자료, 또는 생물학적동등성시험자료를 갈음할 수 있는 타당한 자료.
+2. (P.2 또는 R) \u300C의약품동등성시험기준\u300D [별표2] 원료약품 및 그 분량 변경수준 및 제출자료 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료로서, 생물학적동등성시험자료 또는 비교임상시험자료, 또는 생물학적동등성시험자료를 갈음할 수 있는 타당한 자료.
 3. (P.1) 완제의약품의 성상 및 조성.
 4. (P.2) 변경하고자 하는 제제의 구성 성분에 대한 검토 자료(예: 첨가제의 선택, 원료약품과 첨가제 간의 배합성, 변경된 제제의 포장 시스템 적합성 시험), 주사제, 점안제 및 점이제의 경우 유효성분에 영향을 미치지 않음을 입증하는 자료로서 변경가능 첨가제 내 종류가 상이하거나 종류는 동일하고 분량만 상이한 경우 가속 6개월 안정성 시험자료 제출
 5. (P.3) 배치 조성, 제조 공정 및 공정 관리의 설명 자료, 중요 공정 및 중간체의 관리, (위험도 평가에 따른) 공정 밸리데이션 계획서 및/또는 평가에 대한 자료.
@@ -833,7 +833,7 @@ if current_key == "p1_10":
         st.markdown(r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. (P.1) 완제의약품의 원료약품 분량.
@@ -844,18 +844,18 @@ AR, 연차보고
         hits.append(("AR", r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. (P.1) 완제의약품의 원료약품 분량.
 2. (P.3) 배치 조성에 대한 자료.
 5. (P.5) 완제의약품 기준 및 시험방법 및 최소 1배치(파일럿 배치 이상) 이상의 시험 성적서.
 7. (P.8.2) 변경 후 제제의 생산규모 배치에 대한 안정성 시험 계획 및 이행서약.
 8. (R.1) 해당 변경 사항 외에 제조 관련 문서에 일체의 변경이 없다는 내용의 확인서(statement)."""))
-    elif (step6_selections.get("p1_10_sub_10b") == "변경 있음") and (step6_selections.get("p1_10_req_1") == "충족") and (step6_selections.get("p1_10_req_2") == "충족") and (step6_selections.get("p1_10_req_3") == "충족") and (step6_selections.get("p1_10_req_4") == "충족") and (step6_selections.get("p1_10_req_8") == "충족") and (step6_selections.get("p1_10_req_9") == "충족") and (step6_selections.get("p1_10_req_5") == "미충족") and (step6_selections.get("p1_10_req_6") == "미충족") and (step6_selections.get("p1_10_req_7") == "미충족"):
+    if (step6_selections.get("p1_10_sub_10b") == "변경 있음") and (step6_selections.get("p1_10_req_1") == "충족") and (step6_selections.get("p1_10_req_2") == "충족") and (step6_selections.get("p1_10_req_3") == "충족") and (step6_selections.get("p1_10_req_4") == "충족") and (step6_selections.get("p1_10_req_8") == "충족") and (step6_selections.get("p1_10_req_9") == "충족") and (step6_selections.get("p1_10_req_5") == "미충족") and (step6_selections.get("p1_10_req_6") == "미충족") and (step6_selections.get("p1_10_req_7") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 Cmin, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. (P.1) 완제의약품의 원료약품 분량.
@@ -866,18 +866,18 @@ Cmin, 변경허가(신고)
         hits.append(("Cmin", r"""보고유형은 다음과 같습니다.
 
 Cmin, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. (P.1) 완제의약품의 원료약품 분량.
 2. (P.3) 배치 조성에 대한 자료.
 5. (P.5) 완제의약품 기준 및 시험방법 및 최소 1배치(파일럿 배치 이상) 이상의 시험 성적서.
 7. (P.8.2) 변경 후 제제의 생산규모 배치에 대한 안정성 시험 계획 및 이행서약.
 8. (R.1) 해당 변경 사항 외에 제조 관련 문서에 일체의 변경이 없다는 내용의 확인서(statement)."""))
-    elif (step6_selections.get("p1_10_sub_10c") == "변경 있음") and (step6_selections.get("p1_10_req_1") == "충족") and (step6_selections.get("p1_10_req_2") == "충족") and (step6_selections.get("p1_10_req_3") == "충족") and (step6_selections.get("p1_10_req_5") == "충족") and (step6_selections.get("p1_10_req_6") == "충족") and (step6_selections.get("p1_10_req_7") == "충족") and (step6_selections.get("p1_10_req_8") == "충족") and (step6_selections.get("p1_10_req_9") == "충족") and (step6_selections.get("p1_10_req_4") == "미충족"):
+    if (step6_selections.get("p1_10_sub_10c") == "변경 있음") and (step6_selections.get("p1_10_req_1") == "충족") and (step6_selections.get("p1_10_req_2") == "충족") and (step6_selections.get("p1_10_req_3") == "충족") and (step6_selections.get("p1_10_req_5") == "충족") and (step6_selections.get("p1_10_req_6") == "충족") and (step6_selections.get("p1_10_req_7") == "충족") and (step6_selections.get("p1_10_req_8") == "충족") and (step6_selections.get("p1_10_req_9") == "충족") and (step6_selections.get("p1_10_req_4") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 Cmin, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. (P.1) 완제의약품의 원료약품 분량.
@@ -891,7 +891,7 @@ Cmin, 변경허가(신고)
         hits.append(("Cmin", r"""보고유형은 다음과 같습니다.
 
 Cmin, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. (P.1) 완제의약품의 원료약품 분량.
 2. (P.3) 배치 조성에 대한 자료.
@@ -907,7 +907,7 @@ if current_key == "p3_11":
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 Cmin, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 2. 완제의약품의 성상.
@@ -917,20 +917,20 @@ Cmin, 변경허가(신고)
         hits.append(("Cmin", r"""보고유형은 다음과 같습니다.
 
 Cmin, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 2. 완제의약품의 성상.
 3. (P.3) 배치 조성에 대한 자료, 제조공정 및 공정관리의 설명자료, 해당되는 경우, 제조공정 파라미터 변경을 확인할 수 있는 자료.
 4. (P.5) 변경된 기준 및 시험방법.
 5. (R.1) 해당 변경 사항 외에 제조 관련 문서에 일체의 변경이 없다는 내용의 확인서(statement)."""))
-    elif (step6_selections.get("p3_11_sub_11b") == "변경 있음") and (step6_selections.get("p3_11_req_1") == "충족") and (step6_selections.get("p3_11_req_2") == "충족") and (step6_selections.get("p3_11_req_3") == "충족"):
+    if (step6_selections.get("p3_11_sub_11b") == "변경 있음") and (step6_selections.get("p3_11_req_1") == "충족") and (step6_selections.get("p3_11_req_2") == "충족") and (step6_selections.get("p3_11_req_3") == "충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
-1. (P.2 또는 R) 「의약품동등성시험기준」 [별표3] 제조방법의 변경수준 및 제출자료의 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
+1. (P.2 또는 R) \u300C의약품동등성시험기준\u300D [별표3] 제조방법의 변경수준 및 제출자료의 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
 2. 완제의약품의 성상.
 3. (P.3) 배치 조성에 대한 자료, 제조공정 및 공정관리의 설명자료, 해당되는 경우, 제조공정 파라미터 변경을 확인할 수 있는 자료.
 4. (P.5) 변경된 기준 및 시험방법.
@@ -938,9 +938,9 @@ Cmaj, 변경허가(신고)
         hits.append(("Cmaj", r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
-1. (P.2 또는 R) 「의약품동등성시험기준」 [별표3] 제조방법의 변경수준 및 제출자료의 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
+1. (P.2 또는 R) \u300C의약품동등성시험기준\u300D [별표3] 제조방법의 변경수준 및 제출자료의 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
 2. 완제의약품의 성상.
 3. (P.3) 배치 조성에 대한 자료, 제조공정 및 공정관리의 설명자료, 해당되는 경우, 제조공정 파라미터 변경을 확인할 수 있는 자료.
 4. (P.5) 변경된 기준 및 시험방법.
@@ -951,7 +951,7 @@ if current_key == "p3_12":
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 Cmin, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. (해당하는 경우) 해당 제조소의 ‘의약품 등의 안전에 관한 규칙’ 제48조의2에 따른 제조 및 품질관리기준 적합판정서 또는 해외 제조원인 경우 제4조제1항제4호에 따른 유효기간 내의 제조증명서.
@@ -959,15 +959,15 @@ Cmin, 변경허가(신고)
         hits.append(("Cmin", r"""보고유형은 다음과 같습니다.
 
 Cmin, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. (해당하는 경우) 해당 제조소의 ‘의약품 등의 안전에 관한 규칙’ 제48조의2에 따른 제조 및 품질관리기준 적합판정서 또는 해외 제조원인 경우 제4조제1항제4호에 따른 유효기간 내의 제조증명서.
 2. (P.3.1) 수탁업소를 포함한 각 제조원, 주소, 책임소재 등의 자료."""))
-    elif (step6_selections.get("p3_12_sub_12b") == "변경 있음") and (step6_selections.get("p3_12_req_2") == "충족") and (step6_selections.get("p3_12_req_3") == "충족") and (step6_selections.get("p3_12_req_4") == "충족") and (step6_selections.get("p3_12_req_1") == "미충족") and (step6_selections.get("p3_12_req_5") == "미충족"):
+    if (step6_selections.get("p3_12_sub_12b") == "변경 있음") and (step6_selections.get("p3_12_req_2") == "충족") and (step6_selections.get("p3_12_req_3") == "충족") and (step6_selections.get("p3_12_req_4") == "충족") and (step6_selections.get("p3_12_req_1") == "미충족") and (step6_selections.get("p3_12_req_5") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 Cmin, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. (해당하는 경우) 해당 제조소의 ‘의약품 등의 안전에 관한 규칙’ 제48조의2에 따른 제조 및 품질관리기준 적합판정서 또는 해외 제조원인 경우 제4조제1항제4호에 따른 유효기간 내의 제조증명서.
@@ -976,16 +976,16 @@ Cmin, 변경허가(신고)
         hits.append(("Cmin", r"""보고유형은 다음과 같습니다.
 
 Cmin, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. (해당하는 경우) 해당 제조소의 ‘의약품 등의 안전에 관한 규칙’ 제48조의2에 따른 제조 및 품질관리기준 적합판정서 또는 해외 제조원인 경우 제4조제1항제4호에 따른 유효기간 내의 제조증명서.
 2. (P.3.1) 수탁업소를 포함한 각 제조원, 주소, 책임소재 등의 자료.
 8. (P.8.2) 변경 후 생산규모 배치에 대한 안정성 시험 계획 및 이행서약. 단, 생물학적동등성시험을 제출하는 경우, 최소 2배치(파일럿 배치 이상)의 장기 및 가속 최소 6개월 자료. 다만, 일반제제(장용성 및 방출조절제제, 서방성제제 등 제형의 특수성이 인정되는 제제 외)에 해당하는 경우 ‘최소 2배치(1개의 파일럿 배치 이상 포함)’"""))
-    elif (step6_selections.get("p3_12_sub_12b") == "변경 있음") and (step6_selections.get("p3_12_req_2") == "충족") and (step6_selections.get("p3_12_req_3") == "충족") and (step6_selections.get("p3_12_req_4") == "충족") and (step6_selections.get("p3_12_req_1") == "미충족") and (step6_selections.get("p3_12_req_5") == "미충족"):
+    if (step6_selections.get("p3_12_sub_12b") == "변경 있음") and (step6_selections.get("p3_12_req_2") == "충족") and (step6_selections.get("p3_12_req_3") == "충족") and (step6_selections.get("p3_12_req_4") == "충족") and (step6_selections.get("p3_12_req_1") == "미충족") and (step6_selections.get("p3_12_req_5") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. (해당하는 경우) 해당 제조소의 ‘의약품 등의 안전에 관한 규칙’ 제48조의2에 따른 제조 및 품질관리기준 적합판정서 또는 해외 제조원인 경우 제4조제1항제4호에 따른 유효기간 내의 제조증명서.
@@ -995,23 +995,23 @@ Cmaj, 변경허가(신고)
         hits.append(("Cmaj", r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. (해당하는 경우) 해당 제조소의 ‘의약품 등의 안전에 관한 규칙’ 제48조의2에 따른 제조 및 품질관리기준 적합판정서 또는 해외 제조원인 경우 제4조제1항제4호에 따른 유효기간 내의 제조증명서.
 2. (P.3.1) 수탁업소를 포함한 각 제조원, 주소, 책임소재 등의 자료.
 5. (P.3.5) 변경 후 (위험도 평가에 따른) 실생산 규모의 3배치에 대한 공정 밸리데이션 보고서 또는 밸리데이션 실시 계획서.
 8. (P.8.2) 변경 후 생산규모 배치에 대한 안정성 시험 계획 및 이행서약. 단, 생물학적동등성시험을 제출하는 경우, 최소 2배치(파일럿 배치 이상)의 장기 및 가속 최소 6개월 자료. 다만, 일반제제(장용성 및 방출조절제제, 서방성제제 등 제형의 특수성이 인정되는 제제 외)에 해당하는 경우 ‘최소 2배치(1개의 파일럿 배치 이상 포함)’"""))
-    elif (step6_selections.get("p3_12_sub_12c") == "변경 있음") and (step6_selections.get("p3_12_req_1") == "충족") and (step6_selections.get("p3_12_req_2") == "충족") and (step6_selections.get("p3_12_req_3") == "미충족") and (step6_selections.get("p3_12_req_4") == "미충족") and (step6_selections.get("p3_12_req_5") == "미충족") and (step6_selections.get("p3_12_req_6") == "미충족") and (step6_selections.get("p3_12_req_7") == "미충족") and (step6_selections.get("p3_12_req_9") == "미충족"):
+    if (step6_selections.get("p3_12_sub_12c") == "변경 있음") and (step6_selections.get("p3_12_req_1") == "충족") and (step6_selections.get("p3_12_req_2") == "충족") and (step6_selections.get("p3_12_req_3") == "미충족") and (step6_selections.get("p3_12_req_4") == "미충족") and (step6_selections.get("p3_12_req_5") == "미충족") and (step6_selections.get("p3_12_req_6") == "미충족") and (step6_selections.get("p3_12_req_7") == "미충족") and (step6_selections.get("p3_12_req_9") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 Cmin, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. (해당하는 경우) 해당 제조소의 ‘의약품 등의 안전에 관한 규칙’ 제48조의2에 따른 제조 및 품질관리기준 적합판정서 또는 해외 제조원인 경우 제4조제1항제4호에 따른 유효기간 내의 제조증명서.
 2. (P.3.1) 수탁업소를 포함한 각 제조원, 주소, 책임소재 등의 자료.
 3. (P.2) 원료의약품이 녹지 않은 상태로 존재하는 반고형 제제와 액상 제제일 때는 입도시험 또는 입자도 시험에 대한 적절한 밸리데이션 자료.
-4. (P.2 또는 R) 「의약품동등성시험기준」 [별표4] 제조소의 변경수준 및 제출자료 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
+4. (P.2 또는 R) \u300C의약품동등성시험기준\u300D [별표4] 제조소의 변경수준 및 제출자료 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
 5. (P.3.5) 변경 후 (위험도 평가에 따른) 실생산 규모의 3배치에 대한 공정 밸리데이션 보고서 또는 밸리데이션 실시 계획서.
 6. (P.5.1) 변경 후 완제의약품 규격에 관한 자료.
 7. (P.5.4) 변경 전·후 최소 생산규모 1배치에 대한 배치분석 자료.
@@ -1019,21 +1019,21 @@ Cmin, 변경허가(신고)
         hits.append(("Cmin", r"""보고유형은 다음과 같습니다.
 
 Cmin, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. (해당하는 경우) 해당 제조소의 ‘의약품 등의 안전에 관한 규칙’ 제48조의2에 따른 제조 및 품질관리기준 적합판정서 또는 해외 제조원인 경우 제4조제1항제4호에 따른 유효기간 내의 제조증명서.
 2. (P.3.1) 수탁업소를 포함한 각 제조원, 주소, 책임소재 등의 자료.
 3. (P.2) 원료의약품이 녹지 않은 상태로 존재하는 반고형 제제와 액상 제제일 때는 입도시험 또는 입자도 시험에 대한 적절한 밸리데이션 자료.
-4. (P.2 또는 R) 「의약품동등성시험기준」 [별표4] 제조소의 변경수준 및 제출자료 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
+4. (P.2 또는 R) \u300C의약품동등성시험기준\u300D [별표4] 제조소의 변경수준 및 제출자료 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
 5. (P.3.5) 변경 후 (위험도 평가에 따른) 실생산 규모의 3배치에 대한 공정 밸리데이션 보고서 또는 밸리데이션 실시 계획서.
 6. (P.5.1) 변경 후 완제의약품 규격에 관한 자료.
 7. (P.5.4) 변경 전·후 최소 생산규모 1배치에 대한 배치분석 자료.
 9. (R.1) 해당 변경 사항 외에 제조 관련 문서에 일체의 변경이 없다는 내용의 확인서(statement)."""))
-    elif (step6_selections.get("p3_12_sub_12c") == "변경 있음") and (step6_selections.get("p3_12_req_1") == "충족") and (step6_selections.get("p3_12_req_2") == "충족") and (step6_selections.get("p3_12_req_5") == "충족") and (step6_selections.get("p3_12_req_3") == "미충족") and (step6_selections.get("p3_12_req_4") == "미충족") and (step6_selections.get("p3_12_req_6") == "미충족") and (step6_selections.get("p3_12_req_7") == "미충족") and (step6_selections.get("p3_12_req_9") == "미충족"):
+    if (step6_selections.get("p3_12_sub_12c") == "변경 있음") and (step6_selections.get("p3_12_req_1") == "충족") and (step6_selections.get("p3_12_req_2") == "충족") and (step6_selections.get("p3_12_req_5") == "충족") and (step6_selections.get("p3_12_req_3") == "미충족") and (step6_selections.get("p3_12_req_4") == "미충족") and (step6_selections.get("p3_12_req_6") == "미충족") and (step6_selections.get("p3_12_req_7") == "미충족") and (step6_selections.get("p3_12_req_9") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 Cmin, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. (해당하는 경우) 해당 제조소의 ‘의약품 등의 안전에 관한 규칙’ 제48조의2에 따른 제조 및 품질관리기준 적합판정서 또는 해외 제조원인 경우 제4조제1항제4호에 따른 유효기간 내의 제조증명서.
@@ -1046,7 +1046,7 @@ Cmin, 변경허가(신고)
         hits.append(("Cmin", r"""보고유형은 다음과 같습니다.
 
 Cmin, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. (해당하는 경우) 해당 제조소의 ‘의약품 등의 안전에 관한 규칙’ 제48조의2에 따른 제조 및 품질관리기준 적합판정서 또는 해외 제조원인 경우 제4조제1항제4호에 따른 유효기간 내의 제조증명서.
 2. (P.3.1) 수탁업소를 포함한 각 제조원, 주소, 책임소재 등의 자료.
@@ -1055,17 +1055,17 @@ Cmin, 변경허가(신고)
 6. (P.5.1) 변경 후 완제의약품 규격에 관한 자료.
 7. (P.5.4) 변경 전·후 최소 생산규모 1배치에 대한 배치분석 자료.
 9. (R.1) 해당 변경 사항 외에 제조 관련 문서에 일체의 변경이 없다는 내용의 확인서(statement)."""))
-    elif (step6_selections.get("p3_12_sub_12c") == "변경 있음") and (step6_selections.get("p3_12_req_2") == "충족") and (step6_selections.get("p3_12_req_1") == "미충족") and (step6_selections.get("p3_12_req_3") == "미충족") and (step6_selections.get("p3_12_req_4") == "미충족") and (step6_selections.get("p3_12_req_5") == "미충족") and (step6_selections.get("p3_12_req_6") == "미충족") and (step6_selections.get("p3_12_req_7") == "미충족") and (step6_selections.get("p3_12_req_9") == "미충족"):
+    if (step6_selections.get("p3_12_sub_12c") == "변경 있음") and (step6_selections.get("p3_12_req_2") == "충족") and (step6_selections.get("p3_12_req_1") == "미충족") and (step6_selections.get("p3_12_req_3") == "미충족") and (step6_selections.get("p3_12_req_4") == "미충족") and (step6_selections.get("p3_12_req_5") == "미충족") and (step6_selections.get("p3_12_req_6") == "미충족") and (step6_selections.get("p3_12_req_7") == "미충족") and (step6_selections.get("p3_12_req_9") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. (해당하는 경우) 해당 제조소의 ‘의약품 등의 안전에 관한 규칙’ 제48조의2에 따른 제조 및 품질관리기준 적합판정서 또는 해외 제조원인 경우 제4조제1항제4호에 따른 유효기간 내의 제조증명서.
 2. (P.3.1) 수탁업소를 포함한 각 제조원, 주소, 책임소재 등의 자료.
 3. (P.2) 원료의약품이 녹지 않은 상태로 존재하는 반고형 제제와 액상 제제일 때는 입도시험 또는 입자도 시험에 대한 적절한 밸리데이션 자료.
-4. (P.2 또는 R) 「의약품동등성시험기준」 [별표4] 제조소의 변경수준 및 제출자료 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
+4. (P.2 또는 R) \u300C의약품동등성시험기준\u300D [별표4] 제조소의 변경수준 및 제출자료 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
 5. (P.3.5) 변경 후 (위험도 평가에 따른) 실생산 규모의 3배치에 대한 공정 밸리데이션 보고서 또는 밸리데이션 실시 계획서.
 6. (P.5.1) 변경 후 완제의약품 규격에 관한 자료.
 7. (P.5.4) 변경 전·후 최소 생산규모 1배치에 대한 배치분석 자료.
@@ -1073,12 +1073,12 @@ Cmaj, 변경허가(신고)
         hits.append(("Cmaj", r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. (해당하는 경우) 해당 제조소의 ‘의약품 등의 안전에 관한 규칙’ 제48조의2에 따른 제조 및 품질관리기준 적합판정서 또는 해외 제조원인 경우 제4조제1항제4호에 따른 유효기간 내의 제조증명서.
 2. (P.3.1) 수탁업소를 포함한 각 제조원, 주소, 책임소재 등의 자료.
 3. (P.2) 원료의약품이 녹지 않은 상태로 존재하는 반고형 제제와 액상 제제일 때는 입도시험 또는 입자도 시험에 대한 적절한 밸리데이션 자료.
-4. (P.2 또는 R) 「의약품동등성시험기준」 [별표4] 제조소의 변경수준 및 제출자료 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
+4. (P.2 또는 R) \u300C의약품동등성시험기준\u300D [별표4] 제조소의 변경수준 및 제출자료 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
 5. (P.3.5) 변경 후 (위험도 평가에 따른) 실생산 규모의 3배치에 대한 공정 밸리데이션 보고서 또는 밸리데이션 실시 계획서.
 6. (P.5.1) 변경 후 완제의약품 규격에 관한 자료.
 7. (P.5.4) 변경 전·후 최소 생산규모 1배치에 대한 배치분석 자료.
@@ -1089,7 +1089,7 @@ if current_key == "p3_13":
         st.markdown(r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 2. (P.3.5) (위험도 평가에 따른) 변경하고자 하는 제조 규모의 3배치에 대한 공정 밸리데이션 실시 보고서 또는 밸리데이션 실시 계획서.
@@ -1099,20 +1099,20 @@ AR, 연차보고
         hits.append(("AR", r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 2. (P.3.5) (위험도 평가에 따른) 변경하고자 하는 제조 규모의 3배치에 대한 공정 밸리데이션 실시 보고서 또는 밸리데이션 실시 계획서.
 4. (P.5.4) 변경 전·후 생산 규모 완제의약품의 최소 1배치에 대한 배치분석 자료(변경사항 13a는 연차보고시점 변경된 제조규모의 생산실적이 있는 경우 구비).
 5. (P.8.2) 변경 후 제제의 생산규모 배치에 대한 안정성 시험 계획 및 이행서약.
 6. (R.1) 해당 변경 사항 외에 제조 관련 문서에 일체의 변경이 없다는 내용의 확인서(statement)."""))
-    elif (step6_selections.get("p3_13_sub_13b") == "변경 있음") and (step6_selections.get("p3_13_req_1") == "충족") and (step6_selections.get("p3_13_req_2") == "충족") and (step6_selections.get("p3_13_req_3") == "충족") and (step6_selections.get("p3_13_req_4") == "충족") and (step6_selections.get("p3_13_req_5") == "충족") and (step6_selections.get("p3_13_req_6") == "미충족"):
+    if (step6_selections.get("p3_13_sub_13b") == "변경 있음") and (step6_selections.get("p3_13_req_1") == "충족") and (step6_selections.get("p3_13_req_2") == "충족") and (step6_selections.get("p3_13_req_3") == "충족") and (step6_selections.get("p3_13_req_4") == "충족") and (step6_selections.get("p3_13_req_5") == "충족") and (step6_selections.get("p3_13_req_6") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 IR, 시판전보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
-1. (P.2 또는 R) 「의약품동등성시험기준」 [별표3] 제조방법의 변경수준 및 제출자료의 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
+1. (P.2 또는 R) \u300C의약품동등성시험기준\u300D [별표3] 제조방법의 변경수준 및 제출자료의 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
 2. (P.3.5) (위험도 평가에 따른) 변경하고자 하는 제조 규모의 3배치에 대한 공정 밸리데이션 실시 보고서 또는 밸리데이션 실시 계획서.
 3. (P.5.1) 완제의약품의 기준 및 시험방법.
 4. (P.5.4) 변경 전·후 생산 규모 완제의약품의 최소 1배치에 대한 배치분석 자료(변경사항 13a는 연차보고시점 변경된 제조규모의 생산실적이 있는 경우 구비).
@@ -1121,19 +1121,19 @@ IR, 시판전보고
         hits.append(("IR", r"""보고유형은 다음과 같습니다.
 
 IR, 시판전보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
-1. (P.2 또는 R) 「의약품동등성시험기준」 [별표3] 제조방법의 변경수준 및 제출자료의 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
+1. (P.2 또는 R) \u300C의약품동등성시험기준\u300D [별표3] 제조방법의 변경수준 및 제출자료의 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
 2. (P.3.5) (위험도 평가에 따른) 변경하고자 하는 제조 규모의 3배치에 대한 공정 밸리데이션 실시 보고서 또는 밸리데이션 실시 계획서.
 3. (P.5.1) 완제의약품의 기준 및 시험방법.
 4. (P.5.4) 변경 전·후 생산 규모 완제의약품의 최소 1배치에 대한 배치분석 자료(변경사항 13a는 연차보고시점 변경된 제조규모의 생산실적이 있는 경우 구비).
 5. (P.8.2) 변경 후 제제의 생산규모 배치에 대한 안정성 시험 계획 및 이행서약.
 6. (R.1) 해당 변경 사항 외에 제조 관련 문서에 일체의 변경이 없다는 내용의 확인서(statement)."""))
-    elif (step6_selections.get("p3_13_sub_13b") == "변경 있음") and (step6_selections.get("p3_13_req_1") == "충족") and (step6_selections.get("p3_13_req_2") == "충족") and (step6_selections.get("p3_13_req_3") == "충족") and (step6_selections.get("p3_13_req_4") == "충족") and (step6_selections.get("p3_13_req_6") == "충족") and (step6_selections.get("p3_13_req_5") == "미충족"):
+    if (step6_selections.get("p3_13_sub_13b") == "변경 있음") and (step6_selections.get("p3_13_req_1") == "충족") and (step6_selections.get("p3_13_req_2") == "충족") and (step6_selections.get("p3_13_req_3") == "충족") and (step6_selections.get("p3_13_req_4") == "충족") and (step6_selections.get("p3_13_req_6") == "충족") and (step6_selections.get("p3_13_req_5") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 IR, 시판전보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 2. (P.3.5) (위험도 평가에 따른) 변경하고자 하는 제조 규모의 3배치에 대한 공정 밸리데이션 실시 보고서 또는 밸리데이션 실시 계획서.
@@ -1144,21 +1144,21 @@ IR, 시판전보고
         hits.append(("IR", r"""보고유형은 다음과 같습니다.
 
 IR, 시판전보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 2. (P.3.5) (위험도 평가에 따른) 변경하고자 하는 제조 규모의 3배치에 대한 공정 밸리데이션 실시 보고서 또는 밸리데이션 실시 계획서.
 3. (P.5.1) 완제의약품의 기준 및 시험방법.
 4. (P.5.4) 변경 전·후 생산 규모 완제의약품의 최소 1배치에 대한 배치분석 자료(변경사항 13a는 연차보고시점 변경된 제조규모의 생산실적이 있는 경우 구비).
 5. (P.8.2) 변경 후 제제의 생산규모 배치에 대한 안정성 시험 계획 및 이행서약.
 6. (R.1) 해당 변경 사항 외에 제조 관련 문서에 일체의 변경이 없다는 내용의 확인서(statement)."""))
-    elif (step6_selections.get("p3_13_sub_13c") == "변경 있음") and (step6_selections.get("p3_13_req_1") == "충족") and (step6_selections.get("p3_13_req_2") == "충족") and (step6_selections.get("p3_13_req_3") == "충족") and (step6_selections.get("p3_13_req_4") == "충족") and (step6_selections.get("p3_13_req_5") == "미충족") and (step6_selections.get("p3_13_req_6") == "미충족"):
+    if (step6_selections.get("p3_13_sub_13c") == "변경 있음") and (step6_selections.get("p3_13_req_1") == "충족") and (step6_selections.get("p3_13_req_2") == "충족") and (step6_selections.get("p3_13_req_3") == "충족") and (step6_selections.get("p3_13_req_4") == "충족") and (step6_selections.get("p3_13_req_5") == "미충족") and (step6_selections.get("p3_13_req_6") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
-1. (P.2 또는 R) 「의약품동등성시험기준」 [별표3] 제조방법의 변경수준 및 제출자료의 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
+1. (P.2 또는 R) \u300C의약품동등성시험기준\u300D [별표3] 제조방법의 변경수준 및 제출자료의 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
 2. (P.3.5) (위험도 평가에 따른) 변경하고자 하는 제조 규모의 3배치에 대한 공정 밸리데이션 실시 보고서 또는 밸리데이션 실시 계획서.
 3. (P.5.1) 완제의약품의 기준 및 시험방법.
 4. (P.5.4) 변경 전·후 생산 규모 완제의약품의 최소 1배치에 대한 배치분석 자료(변경사항 13a는 연차보고시점 변경된 제조규모의 생산실적이 있는 경우 구비).
@@ -1167,9 +1167,9 @@ Cmaj, 변경허가(신고)
         hits.append(("Cmaj", r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
-1. (P.2 또는 R) 「의약품동등성시험기준」 [별표3] 제조방법의 변경수준 및 제출자료의 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
+1. (P.2 또는 R) \u300C의약품동등성시험기준\u300D [별표3] 제조방법의 변경수준 및 제출자료의 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
 2. (P.3.5) (위험도 평가에 따른) 변경하고자 하는 제조 규모의 3배치에 대한 공정 밸리데이션 실시 보고서 또는 밸리데이션 실시 계획서.
 3. (P.5.1) 완제의약품의 기준 및 시험방법.
 4. (P.5.4) 변경 전·후 생산 규모 완제의약품의 최소 1배치에 대한 배치분석 자료(변경사항 13a는 연차보고시점 변경된 제조규모의 생산실적이 있는 경우 구비).
@@ -1181,7 +1181,7 @@ if current_key == "p3_14":
         st.markdown(r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. 현재 승인 및 신청한 배치 조성에 대한 비교표 등 변경 전·후에 관한 자료
@@ -1192,18 +1192,18 @@ AR, 연차보고
         hits.append(("AR", r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. 현재 승인 및 신청한 배치 조성에 대한 비교표 등 변경 전·후에 관한 자료
 2. (P.3.5) (위험도 평가에 따른) 공정밸리데이션 자료 또는 무균공정과 멸균 공정 밸리데이션 또는 평가결과에 관한 자료.
 3. (P.5.1) 완제의약품의 기준 및 시험방법.
 4. (P.5.4) 변경 전·후 생산 규모 완제의약품의 최소 1배치에 대한 배치 분석 자료(비교표 형식).
 5. (P.8.2) 변경 후 제제의 생산규모 배치에 대한 안정성 시험 계획 및 이행서약."""))
-    elif (step6_selections.get("p3_14_req_1") == "충족") and (step6_selections.get("p3_14_req_2") == "충족") and (step6_selections.get("p3_14_req_3") == "충족") and (step6_selections.get("p3_14_req_4") == "충족") and (step6_selections.get("p3_14_req_5") == "충족") and (step6_selections.get("p3_14_req_6") == "미충족"):
+    if (step6_selections.get("p3_14_req_1") == "충족") and (step6_selections.get("p3_14_req_2") == "충족") and (step6_selections.get("p3_14_req_3") == "충족") and (step6_selections.get("p3_14_req_4") == "충족") and (step6_selections.get("p3_14_req_5") == "충족") and (step6_selections.get("p3_14_req_6") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 IR, 시판전보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. 현재 승인 및 신청한 배치 조성에 대한 비교표 등 변경 전·후에 관한 자료
@@ -1214,18 +1214,18 @@ IR, 시판전보고
         hits.append(("IR", r"""보고유형은 다음과 같습니다.
 
 IR, 시판전보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. 현재 승인 및 신청한 배치 조성에 대한 비교표 등 변경 전·후에 관한 자료
 2. (P.3.5) (위험도 평가에 따른) 공정밸리데이션 자료 또는 무균공정과 멸균 공정 밸리데이션 또는 평가결과에 관한 자료.
 3. (P.5.1) 완제의약품의 기준 및 시험방법.
 4. (P.5.4) 변경 전·후 생산 규모 완제의약품의 최소 1배치에 대한 배치 분석 자료(비교표 형식).
 5. (P.8.2) 변경 후 제제의 생산규모 배치에 대한 안정성 시험 계획 및 이행서약."""))
-    elif (step6_selections.get("p3_14_req_1") == "충족") and (step6_selections.get("p3_14_req_2") == "충족") and (step6_selections.get("p3_14_req_3") == "충족") and (step6_selections.get("p3_14_req_4") == "충족") and (step6_selections.get("p3_14_req_6") == "충족") and (step6_selections.get("p3_14_req_5") == "미충족"):
+    if (step6_selections.get("p3_14_req_1") == "충족") and (step6_selections.get("p3_14_req_2") == "충족") and (step6_selections.get("p3_14_req_3") == "충족") and (step6_selections.get("p3_14_req_4") == "충족") and (step6_selections.get("p3_14_req_6") == "충족") and (step6_selections.get("p3_14_req_5") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. 현재 승인 및 신청한 배치 조성에 대한 비교표 등 변경 전·후에 관한 자료
@@ -1233,25 +1233,25 @@ Cmaj, 변경허가(신고)
 3. (P.5.1) 완제의약품의 기준 및 시험방법.
 4. (P.5.4) 변경 전·후 생산 규모 완제의약품의 최소 1배치에 대한 배치 분석 자료(비교표 형식).
 5. (P.8.2) 변경 후 제제의 생산규모 배치에 대한 안정성 시험 계획 및 이행서약.
-6. (P.2 또는 R) 「의약품동등성시험기준」 [별표3] 제조방법의 변경수준 및 제출자료 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.""", unsafe_allow_html=True)
+6. (P.2 또는 R) \u300C의약품동등성시험기준\u300D [별표3] 제조방법의 변경수준 및 제출자료 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.""", unsafe_allow_html=True)
         hits.append(("Cmaj", r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. 현재 승인 및 신청한 배치 조성에 대한 비교표 등 변경 전·후에 관한 자료
 2. (P.3.5) (위험도 평가에 따른) 공정밸리데이션 자료 또는 무균공정과 멸균 공정 밸리데이션 또는 평가결과에 관한 자료.
 3. (P.5.1) 완제의약품의 기준 및 시험방법.
 4. (P.5.4) 변경 전·후 생산 규모 완제의약품의 최소 1배치에 대한 배치 분석 자료(비교표 형식).
 5. (P.8.2) 변경 후 제제의 생산규모 배치에 대한 안정성 시험 계획 및 이행서약.
-6. (P.2 또는 R) 「의약품동등성시험기준」 [별표3] 제조방법의 변경수준 및 제출자료 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료."""))
+6. (P.2 또는 R) \u300C의약품동등성시험기준\u300D [별표3] 제조방법의 변경수준 및 제출자료 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료."""))
     pass
 if current_key == "p3_15":
     if (step6_selections.get("p3_15_sub_15a") == "변경 있음") and (step6_selections.get("p3_15_req_1") == "충족") and (step6_selections.get("p3_15_req_2") == "충족") and (step6_selections.get("p3_15_req_3") == "충족") and (step6_selections.get("p3_15_req_4") == "충족") and (step6_selections.get("p3_15_req_5") == "충족") and (step6_selections.get("p3_15_req_6") == "충족") and (step6_selections.get("p3_15_req_7") == "충족") and (step6_selections.get("p3_15_req_8") == "미충족") and (step6_selections.get("p3_15_req_9") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 2. (P.2) 해당되는 경우, 제조 공정의 개발에 관한 검토 자료:
@@ -1265,7 +1265,7 @@ AR, 연차보고
         hits.append(("AR", r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 2. (P.2) 해당되는 경우, 제조 공정의 개발에 관한 검토 자료:
 • In-Vitro 비교시험 자료, 예를 들면, 고형 제제 단위에 대한 기준 및 시험방법에서의 다시점 용출 프로파일(생산 배치 1배치, 이전 공정의 1배치와 대조약 배치 결과에 대한 비교 자료. 규격을 벗어나는 경우 보고하여야 한다).
@@ -1275,14 +1275,14 @@ AR, 연차보고
 4. (P.5) 변경 전·후 생산 규모 1배치에 대한 규격 및 시험성적서.
 6. (P.8.2) 변경 후 제제의 생산규모 배치에 대한 안정성 시험 계획 및 이행서약.
 7. (R.1) 해당 변경 사항 외에 제조 관련 문서에 일체의 변경이 없다는 내용의 확인서(statement)."""))
-    elif (step6_selections.get("p3_15_sub_15b") == "변경 있음") and (step6_selections.get("p3_15_req_1") == "충족") and (step6_selections.get("p3_15_req_2") == "충족") and (step6_selections.get("p3_15_req_3") == "충족") and (step6_selections.get("p3_15_req_4") == "충족") and (step6_selections.get("p3_15_req_5") == "충족") and (step6_selections.get("p3_15_req_6") == "충족") and (step6_selections.get("p3_15_req_7") == "충족") and (step6_selections.get("p3_15_req_8") == "충족") and (step6_selections.get("p3_15_req_9") == "미충족"):
+    if (step6_selections.get("p3_15_sub_15b") == "변경 있음") and (step6_selections.get("p3_15_req_1") == "충족") and (step6_selections.get("p3_15_req_2") == "충족") and (step6_selections.get("p3_15_req_3") == "충족") and (step6_selections.get("p3_15_req_4") == "충족") and (step6_selections.get("p3_15_req_5") == "충족") and (step6_selections.get("p3_15_req_6") == "충족") and (step6_selections.get("p3_15_req_7") == "충족") and (step6_selections.get("p3_15_req_8") == "충족") and (step6_selections.get("p3_15_req_9") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 IR, 시판전보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
-1. (P.2 또는 R) 「의약품동등성시험기준」 [별표3] 제조방법의 변경수준 및 제출자료의 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
+1. (P.2 또는 R) \u300C의약품동등성시험기준\u300D [별표3] 제조방법의 변경수준 및 제출자료의 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
 2. (P.2) 해당되는 경우, 제조 공정의 개발에 관한 검토 자료:
 • In-Vitro 비교시험 자료, 예를 들면, 고형 제제 단위에 대한 기준 및 시험방법에서의 다시점 용출 프로파일(생산 배치 1배치, 이전 공정의 1배치와 대조약 배치 결과에 대한 비교 자료. 규격을 벗어나는 경우 보고하여야 한다).
 • 원료의약품을 용해 상태 또는 비용해 상태로 함유하는 비무균 반고형 제형에 대한 In-Vitro 멤브레인 확산시험(membrane release test) 자료(생산 배치 1배치 및 이전 공정의 1배치와 대조약 배치 결과에 대한 비교 자료
@@ -1295,9 +1295,9 @@ IR, 시판전보고
         hits.append(("IR", r"""보고유형은 다음과 같습니다.
 
 IR, 시판전보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
-1. (P.2 또는 R) 「의약품동등성시험기준」 [별표3] 제조방법의 변경수준 및 제출자료의 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
+1. (P.2 또는 R) \u300C의약품동등성시험기준\u300D [별표3] 제조방법의 변경수준 및 제출자료의 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
 2. (P.2) 해당되는 경우, 제조 공정의 개발에 관한 검토 자료:
 • In-Vitro 비교시험 자료, 예를 들면, 고형 제제 단위에 대한 기준 및 시험방법에서의 다시점 용출 프로파일(생산 배치 1배치, 이전 공정의 1배치와 대조약 배치 결과에 대한 비교 자료. 규격을 벗어나는 경우 보고하여야 한다).
 • 원료의약품을 용해 상태 또는 비용해 상태로 함유하는 비무균 반고형 제형에 대한 In-Vitro 멤브레인 확산시험(membrane release test) 자료(생산 배치 1배치 및 이전 공정의 1배치와 대조약 배치 결과에 대한 비교 자료
@@ -1307,11 +1307,11 @@ IR, 시판전보고
 5. (P.8.1) 최소 2배치(파일럿배치이상)에 대한 3개월 가속 및 장기안정성 시험결과, 의약품동등성시험으로 생물학적동등성시험을 제출하는 경우 2배치(파일럿배치이상)에 대한 장기 및 가속 안정성 시험 최소 6개월 자료. 다만, 충족조건 3(일반제제에 해당한다.)를 만족하는 경우 ‘최소 2배치(1개의 파일럿 배치 이상 포함)’.
 6. (P.8.2) 변경 후 제제의 생산규모 배치에 대한 안정성 시험 계획 및 이행서약.
 7. (R.1) 해당 변경 사항 외에 제조 관련 문서에 일체의 변경이 없다는 내용의 확인서(statement)."""))
-    elif (step6_selections.get("p3_15_sub_15b") == "변경 있음") and (step6_selections.get("p3_15_req_1") == "충족") and (step6_selections.get("p3_15_req_2") == "충족") and (step6_selections.get("p3_15_req_3") == "충족") and (step6_selections.get("p3_15_req_4") == "충족") and (step6_selections.get("p3_15_req_5") == "충족") and (step6_selections.get("p3_15_req_6") == "충족") and (step6_selections.get("p3_15_req_7") == "충족") and (step6_selections.get("p3_15_req_8") == "충족") and (step6_selections.get("p3_15_req_9") == "충족"):
+    if (step6_selections.get("p3_15_sub_15b") == "변경 있음") and (step6_selections.get("p3_15_req_1") == "충족") and (step6_selections.get("p3_15_req_2") == "충족") and (step6_selections.get("p3_15_req_3") == "충족") and (step6_selections.get("p3_15_req_4") == "충족") and (step6_selections.get("p3_15_req_5") == "충족") and (step6_selections.get("p3_15_req_6") == "충족") and (step6_selections.get("p3_15_req_7") == "충족") and (step6_selections.get("p3_15_req_8") == "충족") and (step6_selections.get("p3_15_req_9") == "충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 IR, 시판전보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 2. (P.2) 해당되는 경우, 제조 공정의 개발에 관한 검토 자료:
@@ -1326,7 +1326,7 @@ IR, 시판전보고
         hits.append(("IR", r"""보고유형은 다음과 같습니다.
 
 IR, 시판전보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 2. (P.2) 해당되는 경우, 제조 공정의 개발에 관한 검토 자료:
 • In-Vitro 비교시험 자료, 예를 들면, 고형 제제 단위에 대한 기준 및 시험방법에서의 다시점 용출 프로파일(생산 배치 1배치, 이전 공정의 1배치와 대조약 배치 결과에 대한 비교 자료. 규격을 벗어나는 경우 보고하여야 한다).
@@ -1337,14 +1337,14 @@ IR, 시판전보고
 5. (P.8.1) 최소 2배치(파일럿배치이상)에 대한 3개월 가속 및 장기안정성 시험결과, 의약품동등성시험으로 생물학적동등성시험을 제출하는 경우 2배치(파일럿배치이상)에 대한 장기 및 가속 안정성 시험 최소 6개월 자료. 다만, 충족조건 3(일반제제에 해당한다.)를 만족하는 경우 ‘최소 2배치(1개의 파일럿 배치 이상 포함)’.
 6. (P.8.2) 변경 후 제제의 생산규모 배치에 대한 안정성 시험 계획 및 이행서약.
 7. (R.1) 해당 변경 사항 외에 제조 관련 문서에 일체의 변경이 없다는 내용의 확인서(statement)."""))
-    elif (step6_selections.get("p3_15_sub_15c") == "변경 있음") and (step6_selections.get("p3_15_req_1") == "미충족") and (step6_selections.get("p3_15_req_2") == "미충족") and (step6_selections.get("p3_15_req_3") == "미충족") and (step6_selections.get("p3_15_req_4") == "미충족") and (step6_selections.get("p3_15_req_5") == "미충족") and (step6_selections.get("p3_15_req_6") == "미충족") and (step6_selections.get("p3_15_req_7") == "미충족") and (step6_selections.get("p3_15_req_8") == "미충족") and (step6_selections.get("p3_15_req_9") == "미충족"):
+    if (step6_selections.get("p3_15_sub_15c") == "변경 있음") and (step6_selections.get("p3_15_req_1") == "미충족") and (step6_selections.get("p3_15_req_2") == "미충족") and (step6_selections.get("p3_15_req_3") == "미충족") and (step6_selections.get("p3_15_req_4") == "미충족") and (step6_selections.get("p3_15_req_5") == "미충족") and (step6_selections.get("p3_15_req_6") == "미충족") and (step6_selections.get("p3_15_req_7") == "미충족") and (step6_selections.get("p3_15_req_8") == "미충족") and (step6_selections.get("p3_15_req_9") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
-1. (P.2 또는 R) 「의약품동등성시험기준」 [별표3] 제조방법의 변경수준 및 제출자료의 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
+1. (P.2 또는 R) \u300C의약품동등성시험기준\u300D [별표3] 제조방법의 변경수준 및 제출자료의 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
 2. (P.2) 해당되는 경우, 제조 공정의 개발에 관한 검토 자료:
 • In-Vitro 비교시험 자료, 예를 들면, 고형 제제 단위에 대한 기준 및 시험방법에서의 다시점 용출 프로파일(생산 배치 1배치, 이전 공정의 1배치와 대조약 배치 결과에 대한 비교 자료. 규격을 벗어나는 경우 보고하여야 한다).
 • 원료의약품을 용해 상태 또는 비용해 상태로 함유하는 비무균 반고형 제형에 대한 In-Vitro 멤브레인 확산시험(membrane release test) 자료(생산 배치 1배치 및 이전 공정의 1배치와 대조약 배치 결과에 대한 비교 자료
@@ -1357,9 +1357,9 @@ Cmaj, 변경허가(신고)
         hits.append(("Cmaj", r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
-1. (P.2 또는 R) 「의약품동등성시험기준」 [별표3] 제조방법의 변경수준 및 제출자료의 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
+1. (P.2 또는 R) \u300C의약품동등성시험기준\u300D [별표3] 제조방법의 변경수준 및 제출자료의 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
 2. (P.2) 해당되는 경우, 제조 공정의 개발에 관한 검토 자료:
 • In-Vitro 비교시험 자료, 예를 들면, 고형 제제 단위에 대한 기준 및 시험방법에서의 다시점 용출 프로파일(생산 배치 1배치, 이전 공정의 1배치와 대조약 배치 결과에 대한 비교 자료. 규격을 벗어나는 경우 보고하여야 한다).
 • 원료의약품을 용해 상태 또는 비용해 상태로 함유하는 비무균 반고형 제형에 대한 In-Vitro 멤브레인 확산시험(membrane release test) 자료(생산 배치 1배치 및 이전 공정의 1배치와 대조약 배치 결과에 대한 비교 자료
@@ -1375,24 +1375,24 @@ if current_key == "p3_16":
         st.markdown(r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 2. (P.3.3/P.3.4) 공정 중 시험의 규격 비교표 등 변경 전·후에 관한 자료.""", unsafe_allow_html=True)
         hits.append(("AR", r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 2. (P.3.3/P.3.4) 공정 중 시험의 규격 비교표 등 변경 전·후에 관한 자료."""))
-    elif (step6_selections.get("p3_16_sub_16b") == "변경 있음") and (step6_selections.get("p3_16_req_2") == "충족") and (step6_selections.get("p3_16_req_1") == "미충족") and (step6_selections.get("p3_16_req_3") == "미충족") and (step6_selections.get("p3_16_req_4") == "미충족"):
+    if (step6_selections.get("p3_16_sub_16b") == "변경 있음") and (step6_selections.get("p3_16_req_2") == "충족") and (step6_selections.get("p3_16_req_1") == "미충족") and (step6_selections.get("p3_16_req_3") == "미충족") and (step6_selections.get("p3_16_req_4") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
-1. (P.2 또는 R) 「의약품동등성시험기준」 [별표3] 제조방법의 변경수준 및 제출자료의 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
+1. (P.2 또는 R) \u300C의약품동등성시험기준\u300D [별표3] 제조방법의 변경수준 및 제출자료의 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
 2. (P.3.3/P.3.4) 공정 중 시험의 규격 비교표 등 변경 전·후에 관한 자료.
 3. (P.3.3/P.3.4) 새로운 공정관리 시험방법을 사용하는 경우, 시험방법에 관한 자료.
 4. 새로운 시험방법을 사용하는 경우, 필요 시 밸리데이션 실시 보고서 또는 요약문.
@@ -1401,55 +1401,33 @@ Cmaj, 변경허가(신고)
         hits.append(("Cmaj", r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
-1. (P.2 또는 R) 「의약품동등성시험기준」 [별표3] 제조방법의 변경수준 및 제출자료의 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
+1. (P.2 또는 R) \u300C의약품동등성시험기준\u300D [별표3] 제조방법의 변경수준 및 제출자료의 범위에 따른 의약품동등성시험자료 및 실시한 의약품동등성시험이 동 규정에 적합함을 입증하는 자료.
 2. (P.3.3/P.3.4) 공정 중 시험의 규격 비교표 등 변경 전·후에 관한 자료.
 3. (P.3.3/P.3.4) 새로운 공정관리 시험방법을 사용하는 경우, 시험방법에 관한 자료.
 4. 새로운 시험방법을 사용하는 경우, 필요 시 밸리데이션 실시 보고서 또는 요약문.
 5. (P.5.4) 변경 전후 최소 1배치(파일럿 배치 이상)에 대한 시험성적 비교자료.
 6. 공정관리시험 및 기준의 추가, 삭제, 변경에 대한 타당성 입증 자료."""))
-    elif (step6_selections.get("p3_16_sub_16c") == "변경 있음") and (step6_selections.get("p3_16_req_2") == "충족") and (step6_selections.get("p3_16_req_3") == "충족") and (step6_selections.get("p3_16_req_1") == "미충족") and (step6_selections.get("p3_16_req_4") == "미충족"):
+    if (step6_selections.get("p3_16_sub_16c") == "변경 있음") and (step6_selections.get("p3_16_req_2") == "충족") and (step6_selections.get("p3_16_req_3") == "충족") and (step6_selections.get("p3_16_req_1") == "미충족") and (step6_selections.get("p3_16_req_4") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 6. 공정관리시험 및 기준의 추가, 삭제, 변경에 대한 타당성 입증 자료.""", unsafe_allow_html=True)
         hits.append(("AR", r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 6. 공정관리시험 및 기준의 추가, 삭제, 변경에 대한 타당성 입증 자료."""))
-    elif (step6_selections.get("p3_16_sub_16d") == "변경 있음") and (step6_selections.get("p3_16_req_2") == "충족") and (step6_selections.get("p3_16_req_1") == "미충족") and (step6_selections.get("p3_16_req_3") == "미충족") and (step6_selections.get("p3_16_req_4") == "미충족"):
+    if (step6_selections.get("p3_16_sub_16d") == "변경 있음") and (step6_selections.get("p3_16_req_2") == "충족") and (step6_selections.get("p3_16_req_1") == "미충족") and (step6_selections.get("p3_16_req_3") == "미충족") and (step6_selections.get("p3_16_req_4") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
-        st.markdown(r"""필요서류는 다음과 같습니다.
-
-2. (P.3.3/P.3.4) 공정 중 시험의 규격 비교표 등 변경 전·후에 관한 자료.
-3. (P.3.3/P.3.4) 새로운 공정관리 시험방법을 사용하는 경우, 시험방법에 관한 자료.
-4. 새로운 시험방법을 사용하는 경우, 필요 시 밸리데이션 실시 보고서 또는 요약문.
-5. (P.5.4) 변경 전후 최소 1배치(파일럿 배치 이상)에 대한 시험성적 비교자료.
-6. 공정관리시험 및 기준의 추가, 삭제, 변경에 대한 타당성 입증 자료.""", unsafe_allow_html=True)
-        hits.append(("AR", r"""보고유형은 다음과 같습니다.
- 
-AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
-
-2. (P.3.3/P.3.4) 공정 중 시험의 규격 비교표 등 변경 전·후에 관한 자료.
-3. (P.3.3/P.3.4) 새로운 공정관리 시험방법을 사용하는 경우, 시험방법에 관한 자료.
-4. 새로운 시험방법을 사용하는 경우, 필요 시 밸리데이션 실시 보고서 또는 요약문.
-5. (P.5.4) 변경 전후 최소 1배치(파일럿 배치 이상)에 대한 시험성적 비교자료.
-6. 공정관리시험 및 기준의 추가, 삭제, 변경에 대한 타당성 입증 자료."""))
-    elif (step6_selections.get("p3_16_sub_16e") == "변경 있음") and (step6_selections.get("p3_16_req_2") == "충족") and (step6_selections.get("p3_16_req_1") == "미충족") and (step6_selections.get("p3_16_req_3") == "미충족") and (step6_selections.get("p3_16_req_4") == "미충족"):
-        st.markdown(r"""보고유형은 다음과 같습니다.
- 
-AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 2. (P.3.3/P.3.4) 공정 중 시험의 규격 비교표 등 변경 전·후에 관한 자료.
@@ -1460,7 +1438,29 @@ AR, 연차보고
         hits.append(("AR", r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+
+2. (P.3.3/P.3.4) 공정 중 시험의 규격 비교표 등 변경 전·후에 관한 자료.
+3. (P.3.3/P.3.4) 새로운 공정관리 시험방법을 사용하는 경우, 시험방법에 관한 자료.
+4. 새로운 시험방법을 사용하는 경우, 필요 시 밸리데이션 실시 보고서 또는 요약문.
+5. (P.5.4) 변경 전후 최소 1배치(파일럿 배치 이상)에 대한 시험성적 비교자료.
+6. 공정관리시험 및 기준의 추가, 삭제, 변경에 대한 타당성 입증 자료."""))
+    if (step6_selections.get("p3_16_sub_16e") == "변경 있음") and (step6_selections.get("p3_16_req_2") == "충족") and (step6_selections.get("p3_16_req_1") == "미충족") and (step6_selections.get("p3_16_req_3") == "미충족") and (step6_selections.get("p3_16_req_4") == "미충족"):
+        st.markdown(r"""보고유형은 다음과 같습니다.
+ 
+AR, 연차보고
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
+        st.markdown(r"""필요서류는 다음과 같습니다.
+
+2. (P.3.3/P.3.4) 공정 중 시험의 규격 비교표 등 변경 전·후에 관한 자료.
+3. (P.3.3/P.3.4) 새로운 공정관리 시험방법을 사용하는 경우, 시험방법에 관한 자료.
+4. 새로운 시험방법을 사용하는 경우, 필요 시 밸리데이션 실시 보고서 또는 요약문.
+5. (P.5.4) 변경 전후 최소 1배치(파일럿 배치 이상)에 대한 시험성적 비교자료.
+6. 공정관리시험 및 기준의 추가, 삭제, 변경에 대한 타당성 입증 자료.""", unsafe_allow_html=True)
+        hits.append(("AR", r"""보고유형은 다음과 같습니다.
+ 
+AR, 연차보고
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 2. (P.3.3/P.3.4) 공정 중 시험의 규격 비교표 등 변경 전·후에 관한 자료.
 3. (P.3.3/P.3.4) 새로운 공정관리 시험방법을 사용하는 경우, 시험방법에 관한 자료.
@@ -1473,21 +1473,21 @@ if current_key == "p4_17":
         st.markdown(r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. 첨가제가 식물 또는 합성 기원임을 입증하는 제조업자의 확인서(statement).""", unsafe_allow_html=True)
         hits.append(("AR", r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. 첨가제가 식물 또는 합성 기원임을 입증하는 제조업자의 확인서(statement)."""))
-    elif (step6_selections.get("p4_17_sub_17b") == "변경 있음") and (step6_selections.get("p4_17_req_1") == "미충족"):
+    if (step6_selections.get("p4_17_sub_17b") == "변경 있음") and (step6_selections.get("p4_17_req_1") == "미충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 Cmin, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 2. (P.4) 첨가제의 관리에 관한 자료(기준 및 시험방법 등, 기 사용 예가 있는 경우 관련 자료 포함).
@@ -1496,7 +1496,7 @@ Cmin, 변경허가(신고)
         hits.append(("Cmin", r"""보고유형은 다음과 같습니다.
 
 Cmin, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 2. (P.4) 첨가제의 관리에 관한 자료(기준 및 시험방법 등, 기 사용 예가 있는 경우 관련 자료 포함).
 3. (A.2) 외인성 물질에 대한 안전성 평가 자료(필요 시).
@@ -1507,7 +1507,7 @@ if current_key == "p4_18":
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 Cmin, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. 해당 변경에 대한 타당성 입증 자료.
@@ -1515,7 +1515,7 @@ Cmin, 변경허가(신고)
         hits.append(("Cmin", r"""보고유형은 다음과 같습니다.
 
 Cmin, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. 해당 변경에 대한 타당성 입증 자료.
 2. (P.4) 변경 전·후 규격 비교표 등 변경 전·후에 관한 자료, 변경하고자 하는 규격의 기준설정 근거자료, 시험방법에 관한 자료 및 밸리데이션 자료, 성적서."""))
@@ -1525,14 +1525,14 @@ if current_key == "p4_19":
         st.markdown(r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. 첨가제의 규격 비교표 등 변경 전·후에 관한 자료""", unsafe_allow_html=True)
         hits.append(("AR", r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. 첨가제의 규격 비교표 등 변경 전·후에 관한 자료"""))
     pass
@@ -1541,7 +1541,7 @@ if current_key == "p7_20":
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 IR, 시판전보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. 용기·포장 재질 변경이 반영된 의약품의 성상.
@@ -1549,15 +1549,15 @@ IR, 시판전보고
         hits.append(("IR", r"""보고유형은 다음과 같습니다.
 
 IR, 시판전보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. 용기·포장 재질 변경이 반영된 의약품의 성상.
 2. (P.2) (해당하는 경우) 현재의 포장 시스템에 비해 동등하거나 우수한 보호성을 입증하는 용기 마개 시스템의 적합성에 대한 자료. 기능성 포장을 변경하는 경우, 새로운 포장의 기능성을 입증하는 자료, 기허가 의약품에서 변경하고자 하는 용기·포장 재질의 사용례 등."""))
-    elif (step6_selections.get("p7_20_req_1") == "충족"):
+    if (step6_selections.get("p7_20_req_1") == "충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. 용기·포장 재질 변경이 반영된 의약품의 성상.
@@ -1565,7 +1565,7 @@ Cmaj, 변경허가(신고)
         hits.append(("Cmaj", r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. 용기·포장 재질 변경이 반영된 의약품의 성상.
 2. (P.2) (해당하는 경우) 현재의 포장 시스템에 비해 동등하거나 우수한 보호성을 입증하는 용기 마개 시스템의 적합성에 대한 자료. 기능성 포장을 변경하는 경우, 새로운 포장의 기능성을 입증하는 자료, 기허가 의약품에서 변경하고자 하는 용기·포장 재질의 사용례 등."""))
@@ -1575,7 +1575,7 @@ if current_key == "p7_21":
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 Cmin, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. 용기·포장 재질 변경이 반영된 의약품의 성상.
@@ -1583,15 +1583,15 @@ Cmin, 변경허가(신고)
         hits.append(("Cmin", r"""보고유형은 다음과 같습니다.
 
 Cmin, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. 용기·포장 재질 변경이 반영된 의약품의 성상.
 2. (P.2) 현재의 포장 시스템에 비해 동등하거나 우수한 보호성을 입증하는 용기 마개 시스템의 적합성에 대한 자료. 기능성 포장을 변경하는 경우, 새로운 포장의 기능성을 입증하는 자료."""))
-    elif (step6_selections.get("p7_21_req_1") == "충족"):
+    if (step6_selections.get("p7_21_req_1") == "충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. 용기·포장 재질 변경이 반영된 의약품의 성상.
@@ -1599,7 +1599,7 @@ Cmaj, 변경허가(신고)
         hits.append(("Cmaj", r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. 용기·포장 재질 변경이 반영된 의약품의 성상.
 2. (P.2) 현재의 포장 시스템에 비해 동등하거나 우수한 보호성을 입증하는 용기 마개 시스템의 적합성에 대한 자료. 기능성 포장을 변경하는 경우, 새로운 포장의 기능성을 입증하는 자료."""))
@@ -1609,7 +1609,7 @@ if current_key == "p7_22":
         st.markdown(r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. (P.7) 규격 비교표 등 변경 전·후에 관한 자료, 변경하고자 하는 규격의 타당성 입증 자료
@@ -1617,15 +1617,15 @@ AR, 연차보고
         hits.append(("AR", r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. (P.7) 규격 비교표 등 변경 전·후에 관한 자료, 변경하고자 하는 규격의 타당성 입증 자료
 2. (P.7) 추가 또는 삭제된 시험방법에 관한 자료."""))
-    elif (step6_selections.get("p7_22_req_1") == "충족") and (step6_selections.get("p7_22_req_2") == "충족"):
+    if (step6_selections.get("p7_22_req_1") == "충족") and (step6_selections.get("p7_22_req_2") == "충족"):
         st.markdown(r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. (P.7) 규격 비교표 등 변경 전·후에 관한 자료, 변경하고자 하는 규격의 타당성 입증 자료
@@ -1633,7 +1633,7 @@ AR, 연차보고
         hits.append(("AR", r"""보고유형은 다음과 같습니다.
  
 AR, 연차보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2 제2항 및 제4항에 따른 연차보고(Annual Report, AR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. (P.7) 규격 비교표 등 변경 전·후에 관한 자료, 변경하고자 하는 규격의 타당성 입증 자료
 2. (P.7) 추가 또는 삭제된 시험방법에 관한 자료."""))
@@ -1643,14 +1643,14 @@ if current_key == "p7_23":
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 IR, 시판전보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. (R.1) 포장단위 비교표 등 변경 전·후에 관한 자료""", unsafe_allow_html=True)
         hits.append(("IR", r"""보고유형은 다음과 같습니다.
 
 IR, 시판전보고
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. (R.1) 포장단위 비교표 등 변경 전·후에 관한 자료"""))
     pass
@@ -1659,7 +1659,7 @@ if current_key == "ds_24":
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. 변경에 따른 디자인 스페이스가 타당함을 입증하는 자료(위해평가 및 다변량 연구를 포함하여 디자인 스페이스를 구성하는 다양한 파라미터들의 상호작용에 대한 연구결과를 통해 도출되었음을 입증하는 자료.
@@ -1668,16 +1668,16 @@ Cmaj, 변경허가(신고)
         hits.append(("Cmaj", r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. 변경에 따른 디자인 스페이스가 타당함을 입증하는 자료(위해평가 및 다변량 연구를 포함하여 디자인 스페이스를 구성하는 다양한 파라미터들의 상호작용에 대한 연구결과를 통해 도출되었음을 입증하는 자료.
 2. 표 형식으로 디자인 스페이스를 설명한 자료.
 3. 신청 서류의 변경과 관련된 CTD 자료."""))
-    elif (step6_selections.get("ds_24_sub_24b") == "변경 있음"):
+    if (step6_selections.get("ds_24_sub_24b") == "변경 있음"):
         st.markdown(r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", unsafe_allow_html=True)
         st.markdown(r"""필요서류는 다음과 같습니다.
 
 1. 변경에 따른 디자인 스페이스가 타당함을 입증하는 자료(위해평가 및 다변량 연구를 포함하여 디자인 스페이스를 구성하는 다양한 파라미터들의 상호작용에 대한 연구결과를 통해 도출되었음을 입증하는 자료.
@@ -1686,7 +1686,7 @@ Cmaj, 변경허가(신고)
         hits.append(("Cmaj", r"""보고유형은 다음과 같습니다.
 
 Cmaj, 변경허가(신고)
-「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
+\u300C의약품의 품목허가‧신고‧심사 규정\u300D 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
 
 1. 변경에 따른 디자인 스페이스가 타당함을 입증하는 자료(위해평가 및 다변량 연구를 포함하여 디자인 스페이스를 구성하는 다양한 파라미터들의 상호작용에 대한 연구결과를 통해 도출되었음을 입증하는 자료.
 2. 표 형식으로 디자인 스페이스를 설명한 자료.
@@ -1696,7 +1696,7 @@ Cmaj, 변경허가(신고)
 if not hits:
     st.warning(
         "해당 변경사항에 대한 충족조건을 고려하였을 때,\n"
-        "「의약품 허가 후 제조방법 변경관리 가이드라인」에서 제시하고 있는\n"
+        "\u300C의약품 허가 후 제조방법 변경관리 가이드라인\u300D에서 제시하고 있는\n"
         "범위에 해당하지 않는 것으로 확인됩니다"
     )
 
