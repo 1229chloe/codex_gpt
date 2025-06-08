@@ -290,7 +290,7 @@ if st.session_state.step == 5:
 if "step6_selections" not in st.session_state:
     st.session_state.step6_selections = {}
 
-step6_items = {
+step6_items = {␊
     "s1_1": {
         "title": "3.2.S.1 일반정보\n1. 원료의약품 명칭변경",
         "subitems": {},
@@ -597,6 +597,8 @@ step6_items = {
         },
     }
 }
+
+st.session_state.step6_items = step6_items
 
 if "step6_selections" not in st.session_state:
     st.session_state.step6_selections = {}
