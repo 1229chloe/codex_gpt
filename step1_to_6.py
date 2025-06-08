@@ -1,5 +1,4 @@
 import streamlit as st
-import step7_hardcoded
 
 # ===== 초기 상태 정의 =====
 if "step" not in st.session_state:
@@ -17,6 +16,24 @@ if "step4_selections" not in st.session_state:
 
 if "step5_targets" not in st.session_state:
     st.session_state.step5_targets = []
+
+if "step5_selections" not in st.session_state:
+    st.session_state.step5_selections = {}
+
+if "step6_targets" not in st.session_state:
+    st.session_state.step6_targets = []
+
+if "step6_selections" not in st.session_state:
+    st.session_state.step6_selections = {}
+
+if "step6_page" not in st.session_state:
+    st.session_state.step6_page = 0
+
+if "step7_page" not in st.session_state:
+    st.session_state.step7_page = 0
+
+if "step7_results" not in st.session_state:
+    st.session_state.step7_results = {}
 
 # ===== Step1 함수 및 화면 =====
 def go_to_step2():
@@ -82,12 +99,6 @@ if st.session_state.step == 3:
     elif st.session_state.step3_answer == "아니오":
         st.warning("""먼저, CTD 제3부 품질평가 자료 중 3.2.S.2, 3.2.S.3 및 3.2.P.2, 3.2.P.3, 3.2.P.4, 3.2.P.7를 제출하여 제조방법 자료로서 심사 받으시기 바랍니다.  
 (근거 : 「의약품의 품목허가·신고·심사 규정」[별표 19])""")
-
-# Step 4 상태 초기화
-if "step4_selections" not in st.session_state:
-    st.session_state.step4_selections = {}
-if "step5_targets" not in st.session_state:
-    st.session_state.step5_targets = []
 
 # Step 4 항목 (프롬프트 문구 그대로)
 step4_items = {
@@ -168,12 +179,6 @@ if st.session_state.step == 4:
         st.button("이전단계로", on_click=go_back_to_step3)
     with col2:
         st.button("다음단계로", on_click=go_to_step5, disabled=not all_selected)
-
-# ===== Step5 상태 초기화 =====
-if "step5_selections" not in st.session_state:
-    st.session_state.step5_selections = {}
-if "step6_targets" not in st.session_state:
-    st.session_state.step6_targets = []
 
 # ===== Step5 항목 정의 (전체 하드코딩) =====
 step5_items = {
@@ -283,10 +288,7 @@ if st.session_state.step == 5:
         st.button("이전단계로", on_click=go_back_to_step4)
     with col2:
         st.button("다음단계로", on_click=go_to_step6, disabled=not all_selected)
-
-if "step6_selections" not in st.session_state:
-    st.session_state.step6_selections = {}
-
+        
 step6_items = {
     "s1_1": {
         "title": "3.2.S.1 일반정보\n1. 원료의약품 명칭변경",
@@ -597,18 +599,6 @@ step6_items = {
 
 st.session_state.step6_items = step6_items
 
-if "step6_selections" not in st.session_state:
-    st.session_state.step6_selections = {}
-
-if "step6_page" not in st.session_state:
-    st.session_state.step6_page = 0
-
-if "step7_page" not in st.session_state:
-    st.session_state.step7_page = 0
-
-if "step7_results" not in st.session_state:
-    st.session_state.step7_results = {}
-    
 def go_to_prev_step6_page():
     if st.session_state.step6_page > 0:
         st.session_state.step6_page -= 1
@@ -705,7 +695,6 @@ if st.session_state.step == 6:
             else:
                 st.button("다음항목 선택하기", on_click=go_to_next_step6_page)
 
-import step7_dynamic
-
 if st.session_state.step == 7:
-    step7_dynamic.render_step7(step6_items)
+    import importlib, step7_hardcoded
+    importlib.reload(step7_hardcoded)
