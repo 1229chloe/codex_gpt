@@ -4,16 +4,16 @@
 > This README describes how to run the fully integrated **Steps 1–7** Streamlit app.
 > All identifiers, column names, and Korean UI strings **must remain exactly as written**  
 > to ensure a 1-to-1 mapping with `step7_data.xlsx`.
-> The worksheet data is already baked into `step7_hardcoded.py` and the Excel
-> file is **not** loaded at runtime.
+> All worksheet data for **Steps&nbsp;1–7** is hard-coded inside `step1_to_7.py`.
+> No external files are read at runtime.
 
 ---
 
 ## 1. Repository Structure
 
     / (project root)
-    ├─ step1_to_7_full.py   # Steps 1 – 7 combined in one script
-    ├─ step7_hardcoded.py   # Step 7 rules embedded as Python code
+    ├─ step1_to_7.py        # Steps 1 – 7 unified, fully hard-coded
+    ├─ step7_hardcoded.py   # legacy Step 7 module (embedded)
     ├─ step7_data.xlsx      # reference workbook (not read at runtime)
     └─ README.md            # (this file)
 
@@ -21,9 +21,9 @@
 
 ## 2. Activation Sequence
 
-1. Run `streamlit run step1_to_7_full.py`.
+1. Run `streamlit run step1_to_7.py`.
 2. Steps 1–7 are all contained in this single script. After Step 6 finishes, `st.session_state.step` becomes `7`.
-3. Step 7 executes using the rules defined in `step7_hardcoded.py` with no Excel reads.
+3. Step 7 executes automatically using the built-in rules with no Excel reads.
 4. Final-page button **"신청양식 확인하기"** sets `st.session_state.step = 8`, handing control to Step 8
 
 ---
@@ -66,11 +66,12 @@ Do not alter its structure.
 
 ---
 
-## 7. Quick Setup Checklist
+-## 7. Quick Setup Checklist
 
-- [ ] Run `streamlit run step1_to_7_full.py`
+- [ ] Run `streamlit run step1_to_7.py`
 - [ ] Step 7 executes automatically whenever `st.session_state.step == 7`
 - [ ] `step7_data.xlsx` is only for reference and is not read by the code
+- [ ] Steps 1–7 are fully hard-coded and require no external data at runtime
 
 ---
 
@@ -80,7 +81,7 @@ Install the dependencies and start Streamlit:
 
 ```bash
 pip install -r requirements.txt
-streamlit run step1_to_7_full.py
+streamlit run step1_to_7.py
 ```
 
 Step 7 appears automatically whenever `st.session_state.step` becomes `7`.
