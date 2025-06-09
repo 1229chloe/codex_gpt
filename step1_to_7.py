@@ -909,7 +909,7 @@ if st.session_state.step == 7:
     2. (S.2.2) 변경 후 합성 공정 흐름도 및 제조 공정에 대한 서술 자료.
     3. (S.2.4) 변경 후 공정관리 시험 규격에 관한 자료.
     6. 삭제되는 공정관리시험이 품질에 영향을 미치지 않음을 입증하는 자료(또는 위험 평가 자료)."""))
-        if (step6_selections.get("s2_4_sub_4d") == "변경 있음") and (step6_selections.get("s2_4_req_1") == "충족") and (step6_selections.get("s2_4_req_2") == "미충족") and (step6_selections.get("s2_4_req_3") == "미충족") and (step6_selections.get("s2_4_req_4") == "미충족") and (step6_selections.get("s2_4_req_5") == "미충족"):
+        if (step6_selections.get("s2_4_sub_4e") == "변경 있음") and (step6_selections.get("s2_4_req_1") == "충족") and (step6_selections.get("s2_4_req_2") == "미충족") and (step6_selections.get("s2_4_req_3") == "미충족") and (step6_selections.get("s2_4_req_4") == "미충족") and (step6_selections.get("s2_4_req_5") == "미충족"):
             hits.append(("Cmaj", r"""보고유형은 다음과 같습니다.
     
     Cmaj, 변경허가(신고)
@@ -923,7 +923,14 @@ if st.session_state.step == 7:
     8. (S.3.2) 해당변경이 불순물에 영향을 미칠 경우, 불순물에 대한 고찰 및 근거자료.
     9. (S.4.1) 변경 후 원료의약품(해당되는 경우 중간체) 규격에 관한 자료.
     10. (S.4.4) 변경 전·후 원료의약품 최소 1배치(파일럿 배치 이상)의 배치분석자료."""))
-         if (step6_selections.get("s2_4_sub_4e") == "변경 있음") and (step6_selections.get("s2_4_req_1") == "충족") and (step6_selections.get("s2_4_req_2") == "미충족") and (step6_selections.get("s2_4_req_3") == "미충족") and (step6_selections.get("s2_4_req_4") == "미충족") and (step6_selections.get("s2_4_req_5") == "미충족"):
+        if (
+            step6_selections.get("s2_4_sub_4e") == "변경 있음"
+            and step6_selections.get("s2_4_req_1") == "충족"
+            and step6_selections.get("s2_4_req_2") == "미충족"
+            and step6_selections.get("s2_4_req_3") == "미충족"
+            and step6_selections.get("s2_4_req_4") == "미충족"
+            and step6_selections.get("s2_4_req_5") == "미충족"
+        ):
             hits.append(("Cmaj", r"""보고유형은 다음과 같습니다.
     
     Cmaj, 변경허가(신고)
@@ -1184,7 +1191,12 @@ if st.session_state.step == 7:
     3. (P.3) 배치 조성에 대한 자료, 제조공정 및 공정관리의 설명자료, 해당되는 경우, 제조공정 파라미터 변경을 확인할 수 있는 자료.
     4. (P.5) 변경된 기준 및 시험방법.
     5. (R.1) 해당 변경 사항 외에 제조 관련 문서에 일체의 변경이 없다는 내용의 확인서(statement)."""))
-         if (step6_selections.get("p3_11_sub_11b") == "변경 있음") and (step6_selections.get("p3_11_req_1") == "충족") and (step6_selections.get("p3_11_req_2") == "충족") and (step6_selections.get("p3_11_req_3") == "충족"):
+        if (
+            step6_selections.get("p3_11_sub_11b") == "변경 있음"
+            and step6_selections.get("p3_11_req_1") == "충족"
+            and step6_selections.get("p3_11_req_2") == "충족"
+            and step6_selections.get("p3_11_req_3") == "충족"
+        ):
             hits.append(("Cmaj", r"""보고유형은 다음과 같습니다.
     
     Cmaj, 변경허가(신고)
@@ -1225,7 +1237,14 @@ if st.session_state.step == 7:
     2. (P.3.1) 수탁업소를 포함한 각 제조원, 주소, 책임소재 등의 자료.
     5. (P.3.5) 변경 후 (위험도 평가에 따른) 실생산 규모의 3배치에 대한 공정 밸리데이션 보고서 또는 밸리데이션 실시 계획서.
     8. (P.8.2) 변경 후 생산규모 배치에 대한 안정성 시험 계획 및 이행서약. 단, 생물학적동등성시험을 제출하는 경우, 최소 2배치(파일럿 배치 이상)의 장기 및 가속 최소 6개월 자료. 다만, 일반제제(장용성 및 방출조절제제, 서방성제제 등 제형의 특수성이 인정되는 제제 외)에 해당하는 경우 ‘최소 2배치(1개의 파일럿 배치 이상 포함)’"""))
-        if (step6_selections.get("p3_12_sub_12c1") == "변경 있음") and (step6_selections.get("p3_12_req_1") == "충족") and (step6_selections.get("p3_12_req_2") == "충족") and (step6_selections.get("p3_12_req_3") == "미충족") and (step6_selections.get("p3_12_req_4") == "미충족") and (step6_selections.get("p3_12_req_5") == "미충족") and (step6_selections.get("p3_12_req_6") == "미충족") and (step6_selections.get("p3_12_req_7") == "미충족") and (step6_selections.get("p3_12_req_9") == "미충족"):
+        if (
+            step6_selections.get("p3_12_sub_12c1") == "변경 있음"
+            and step6_selections.get("p3_12_req_1") == "충족"
+            and step6_selections.get("p3_12_req_2") == "충족"
+            and step6_selections.get("p3_12_req_3") == "미충족"
+            and step6_selections.get("p3_12_req_4") == "미충족"
+            and step6_selections.get("p3_12_req_5") == "미충족"
+        ):
             hits.append(("Cmin", r"""보고유형은 다음과 같습니다.
     
     Cmin, 변경허가(신고)
@@ -1239,8 +1258,14 @@ if st.session_state.step == 7:
     6. (P.5.1) 변경 후 완제의약품 규격에 관한 자료.
     7. (P.5.4) 변경 전·후 최소 생산규모 1배치에 대한 배치분석 자료.
     9. (R.1) 해당 변경 사항 외에 제조 관련 문서에 일체의 변경이 없다는 내용의 확인서(statement)."""))
-
-        if (step6_selections.get("p3_12_sub_12c1") == "변경 있음") and (step6_selections.get("p3_12_req_1") == "충족") and (step6_selections.get("p3_12_req_2") == "충족") and (step6_selections.get("p3_12_req_5") == "충족") and (step6_selections.get("p3_12_req_3") == "미충족") and (step6_selections.get("p3_12_req_4") == "미충족") and (step6_selections.get("p3_12_req_6") == "미충족") and (step6_selections.get("p3_12_req_7") == "미충족") and (step6_selections.get("p3_12_req_9") == "미충족"):
+        if (
+            step6_selections.get("p3_12_sub_12c1") == "변경 있음"
+            and step6_selections.get("p3_12_req_1") == "충족"
+            and step6_selections.get("p3_12_req_2") == "충족"
+            and step6_selections.get("p3_12_req_5") == "충족"
+            and step6_selections.get("p3_12_req_3") == "미충족"
+            and step6_selections.get("p3_12_req_4") == "미충족"
+        ):
             hits.append(("Cmin", r"""보고유형은 다음과 같습니다.
     
     Cmin, 변경허가(신고)
@@ -1253,8 +1278,14 @@ if st.session_state.step == 7:
     6. (P.5.1) 변경 후 완제의약품 규격에 관한 자료.
     7. (P.5.4) 변경 전·후 최소 생산규모 1배치에 대한 배치분석 자료.
     9. (R.1) 해당 변경 사항 외에 제조 관련 문서에 일체의 변경이 없다는 내용의 확인서(statement)."""))
-
-        if (step6_selections.get("p3_12_sub_12c2") == "변경 있음") and (step6_selections.get("p3_12_req_2") == "충족") and (step6_selections.get("p3_12_req_1") == "미충족") and (step6_selections.get("p3_12_req_3") == "미충족") and (step6_selections.get("p3_12_req_4") == "미충족") and (step6_selections.get("p3_12_req_5") == "미충족") and (step6_selections.get("p3_12_req_6") == "미충족") and (step6_selections.get("p3_12_req_7") == "미충족") and (step6_selections.get("p3_12_req_9") == "미충족"):
+        if (
+            step6_selections.get("p3_12_sub_12c2") == "변경 있음"
+            and step6_selections.get("p3_12_req_2") == "충족"
+            and step6_selections.get("p3_12_req_1") == "미충족"
+            and step6_selections.get("p3_12_req_3") == "미충족"
+            and step6_selections.get("p3_12_req_4") == "미충족"
+            and step6_selections.get("p3_12_req_5") == "미충족"
+        ):
             hits.append(("Cmaj", r"""보고유형은 다음과 같습니다.
     
     Cmaj, 변경허가(신고)
@@ -1502,56 +1533,81 @@ if st.session_state.step == 7:
         
     if current_key == "p7_20":
         if (step6_selections.get("p7_20_req_1") == "충족"):
-            hits.append(("IR", r"""보고유형은 다음과 같습니다.
+            hits.append(
+                (
+                    "IR",
+                    r"""보고유형은 다음과 같습니다.
     
     IR, 시판전보고
-    「의약품의 품목허가‧신고‧심사 규정」 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
-    
+    「의약품의 품목허가‧신고‧심사 규정」 제3조의2제4항 단서조항에 따른 시판전 보고(Immediate Report, IR) 수준의 변경사항입니다.""",
+                    r"""필요서류는 다음과 같습니다.
+
     1. 용기·포장 재질 변경이 반영된 의약품의 성상.
-    2. (P.2) (해당하는 경우) 현재의 포장 시스템에 비해 동등하거나 우수한 보호성을 입증하는 용기 마개 시스템의 적합성에 대한 자료. 기능성 포장을 변경하는 경우, 새로운 포장의 기능성을 입증하는 자료, 기허가 의약품에서 변경하고자 하는 용기·포장 재질의 사용례 등."""))
+    2. (P.2) (해당하는 경우) 현재의 포장 시스템에 비해 동등하거나 우수한 보호성을 입증하는 용기 마개 시스템의 적합성에 대한 자료. 기능성 포장을 변경하는 경우, 새로운 포장의 기능성을 입증하는 자료, 기허가 의약품에서 변경하고자 하는 용기·포장 재질의 사용례 등.
     3. (P.3) 직접 용기·포장의 재질 및 종류 변경이 반영된 제조방법 자료.
     4. (P.7) 변경하고자 하는 일차 포장 유형에 대한 정보(예 : 성상, 일차 포장 구성 성분들의 구성 재료, 규격, 성적서 등).
-    6. (P.8.2) 변경 후 제제의 생산규모 배치에 대한 안정성 시험 계획 및 이행서약."""))
-    
+    6. (P.8.2) 변경 후 제제의 생산규모 배치에 대한 안정성 시험 계획 및 이행서약.
+                    """,
+                )
+            )
+
         if (step6_selections.get("p7_20_req_1") == "미충족"):
-            hits.append(("Cmaj", r"""보고유형은 다음과 같습니다.
-    
+            hits.append(
+                (
+                    "Cmaj",
+                    r"""보고유형은 다음과 같습니다.
+                        
     Cmaj, 변경허가(신고)
-    「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
-    
+    「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""",
+                    r"""필요서류는 다음과 같습니다.
+
     1. 용기·포장 재질 변경이 반영된 의약품의 성상.
-    2. (P.2) (해당하는 경우) 현재의 포장 시스템에 비해 동등하거나 우수한 보호성을 입증하는 용기 마개 시스템의 적합성에 대한 자료. 기능성 포장을 변경하는 경우, 새로운 포장의 기능성을 입증하는 자료, 기허가 의약품에서 변경하고자 하는 용기·포장 재질의 사용례 등."""))
+    2. (P.2) (해당하는 경우) 현재의 포장 시스템에 비해 동등하거나 우수한 보호성을 입증하는 용기 마개 시스템의 적합성에 대한 자료. 기능성 포장을 변경하는 경우, 새로운 포장의 기능성을 입증하는 자료, 기허가 의약품에서 변경하고자 하는 용기·포장 재질의 사용례 등.
     3. (P.3) 직접 용기·포장의 재질 및 종류 변경이 반영된 제조방법 자료.
     4. (P.7) 변경하고자 하는 일차 포장 유형에 대한 정보(예 : 성상, 일차 포장 구성 성분들의 구성 재료, 규격, 성적서 등).
     5. (P.8.1) 안정성 요약문과 결론, 2배치(파일럿배치 이상) 이상에 대한 3개월 이상의 장기보존 및 가속 시험. 해당되는 경우, 광 가혹 시험 결과.
-    6. (P.8.2) 변경 후 제제의 생산규모 배치에 대한 안정성 시험 계획 및 이행서약."""))
-    
+    6. (P.8.2) 변경 후 제제의 생산규모 배치에 대한 안정성 시험 계획 및 이행서약.
+                    """,
+                )
+            )    
+            
     if current_key == "p7_21":
-        if (step6_selections.get("p7_21_req_1") == "충족"):
-            hits.append(("Cmin", r"""보고유형은 다음과 같습니다.
-    
+            hits.append(
+                (
+                    "Cmin",
+                    r"""보고유형은 다음과 같습니다.
+
+
     Cmin, 변경허가(신고)
-    「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
-    
-    1. 용기·포장 재질 변경이 반영된 의약품의 성상. 
-    2. (P.2) 현재의 포장 시스템에 비해 동등하거나 우수한 보호성을 입증하는 용기 마개 시스템의 적합성에 대한 자료. 기능성 포장을 변경하는 경우, 새로운 포장의 기능성을 입증하는 자료. 
+       「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Minor change(Cmin)수준의 변경사항입니다.""",
+                    r"""필요서류는 다음과 같습니다.
+
+    1. 용기·포장 재질 변경이 반영된 의약품의 성상.
+    2. (P.2) 현재의 포장 시스템에 비해 동등하거나 우수한 보호성을 입증하는 용기 마개 시스템의 적합성에 대한 자료. 기능성 포장을 변경하는 경우, 새로운 포장의 기능성을 입증하는 자료.
     3. (P.3) 직접 용기·포장의 재질 및 종류 변경이 반영된 제조방법 자료.
     4. (P.7) 변경하고자 하는 일차 포장 유형에 대한 정보(예 : 성상, 일차 포장 구성 성분들의 구성 재료, 규격, 성적서 등).
     5. (P.8.1) 안정성 요약문과 결론, 2배치(파일럿배치 이상)에 대한 3개월 이상의 장기보존 및 가속 시험.
     7. (P.8.2) 변경 후 제제의 생산규모 배치에 대한 안정성 시험 계획 및 이행서약.
+          """,
+                )
+            )
         if (step6_selections.get("p7_21_req_1") == "미충족"):
             hits.append(("Cmaj", r"""보고유형은 다음과 같습니다.
     
     Cmaj, 변경허가(신고)
-    「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""", r"""필요서류는 다음과 같습니다.
-    
-    1. 용기·포장 재질 변경이 반영된 의약품의 성상. 
-    2. (P.2) 현재의 포장 시스템에 비해 동등하거나 우수한 보호성을 입증하는 용기 마개 시스템의 적합성에 대한 자료. 기능성 포장을 변경하는 경우, 새로운 포장의 기능성을 입증하는 자료. 
+    「의약품의 품목허가‧신고‧심사 규정」 제3조의2(의약품의 허가‧신고의 변경 처리) 및 제6조(국제공통기술문서 작성)에 따라 원료의약품과 완제의약품의 제조원 또는 제조방법 중 품질에 중요한 영향을 미치는 변경허가(신고) 신청(Change, C) 대상에 해당하며, 변경사항의 중요도, 충족조건 및 제출자료 요건의 난이도 등을 고려하였을 때 Major change(Cmaj)수준의 변경사항입니다.""",
+                    r"""필요서류는 다음과 같습니다.
+
+    1. 용기·포장 재질 변경이 반영된 의약품의 성상.
+    2. (P.2) 현재의 포장 시스템에 비해 동등하거나 우수한 보호성을 입증하는 용기 마개 시스템의 적합성에 대한 자료. 기능성 포장을 변경하는 경우, 새로운 포장의 기능성을 입증하는 자료.
     3. (P.3) 직접 용기·포장의 재질 및 종류 변경이 반영된 제조방법 자료.
     4. (P.7) 변경하고자 하는 일차 포장 유형에 대한 정보(예 : 성상, 일차 포장 구성 성분들의 구성 재료, 규격, 성적서 등).
     6. (P.8.1) 안정성 요약문과 결론, 생산 규모 3배치(최소 2배치 파일럿배치 이상)에 대한 6개월 이상의 장기보존 및 가속 시험. 해당되는 경우, 광 가혹 시험 결과.
     7. (P.8.2) 변경 후 제제의 생산규모 배치에 대한 안정성 시험 계획 및 이행서약.
-    
+                    """,
+                )
+            )
+
     if current_key == "p7_22":
         if (step6_selections.get("p7_22_sub_22a") == "변경 있음") and (step6_selections.get("p7_22_req_1") == "충족") and (step6_selections.get("p7_22_req_2") == "충족"):
             hits.append(("AR", r"""보고유형은 다음과 같습니다.
@@ -1618,5 +1674,3 @@ if st.session_state.step == 7:
     with col2:
         if st.session_state.step7_page == total_pages - 1:
             st.button("신청양식 확인하기", on_click=lambda: st.session_state.__setitem__("step", 8))
-        else:
-            st.button("다음단계로", on_click=lambda: st.session_state.__setitem__("step7_page", st.session_state.step7_page + 1))
