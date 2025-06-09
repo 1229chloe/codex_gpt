@@ -706,8 +706,8 @@ if st.session_state.step == 7:
     st.markdown(st.session_state.step6_items[current_key]["title"])
     hits = []
     
-    orig_markdown = st.markdown
-    st.markdown = lambda *args, **kwargs: None
+    # orig_markdown = st.markdown
+    # st.markdown = lambda *args, **kwargs: None
     
     if current_key == "s1_1":
         if (step6_selections.get("s1_1_req_1") == "충족"):
