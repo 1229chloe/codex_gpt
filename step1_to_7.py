@@ -1599,17 +1599,11 @@ if st.session_state.step == 7:
     3. 신청 서류의 변경과 관련된 CTD 자료."""))
         
     
-    st.markdown = orig_markdown
-
-    if hits:
-        st.markdown("<ul>", unsafe_allow_html=True)
-        for _, output_1_text, output_2_text in hits:
-            st.markdown(
-                f"<li>{output_1_text}<br/>{output_2_text}</li>",
-                unsafe_allow_html=True,
-            )
-        st.markdown("</ul>", unsafe_allow_html=True)
-    else:
+    for _, report, docs in hits:
+        st.markdown(report, unsafe_allow_html=True)
+        st.markdown(docs, unsafe_allow_html=True)
+    
+    if not hits:
         st.warning(
             "해당 변경사항에 대한 충족조건을 고려하였을 때,\n"
             "「의약품 허가 후 제조방법 변경관리 가이드라인」에서 제시하고 있는\n"
